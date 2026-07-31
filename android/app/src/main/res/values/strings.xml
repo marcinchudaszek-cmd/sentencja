@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Sentencja</string>
+    <string name="title_activity_main">Sentencja</string>
+    <string name="package_name">pl.sentencja.app</string>
+    <string name="custom_url_scheme">pl.sentencja.app</string>
+</resources>
