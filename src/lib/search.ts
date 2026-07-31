@@ -38,19 +38,34 @@ export interface SearchHit {
   score: number
 }
 
+/** Rozbija zapytanie na frazy w cudzysłowie (dosłowne) i pojedyncze słowa. */
+export function parseQuery(query: string): { phrases: string[]; tokens: string[] } {
+  const phrases: string[] = []
+  const rest = query.replace(/"([^"]+)"|„([^”]+)”/g, (_, a, b) => {
+    const phrase = normalize(a ?? b ?? '')
+    if (phrase) phrases.push(phrase)
+    return ' '
+  })
+  const tokens = normalize(rest).split(' ').filter((t) => t.length > 1)
+  return { phrases, tokens }
+}
+
 /**
- * Prosty scoring tokenowy: dopasowanie w treści cytatu waży najwięcej,
- * potem autor, temat i źródło. Wszystkie tokeny muszą wystąpić gdziekolwiek.
+ * Scoring tokenowy: dopasowanie w treści cytatu waży najwięcej, potem autor,
+ * temat i źródło. Wszystkie tokeny muszą wystąpić gdziekolwiek, a frazy ujęte
+ * w cudzysłów — dosłownie w treści cytatu lub jego oryginale.
  */
 export function search(query: string, limit = 60): SearchHit[] {
   const q = normalize(query)
   if (q.length < 2) return []
-  const tokens = q.split(' ').filter((t) => t.length > 1)
-  if (!tokens.length) return []
+  const { phrases, tokens } = parseQuery(query)
+  if (!tokens.length && !phrases.length) return []
 
   const hits: SearchHit[] = []
   for (const entry of INDEX) {
-    let score = 0
+    if (phrases.some((p) => !entry.text.includes(p))) continue
+
+    let score = phrases.length * 30
     let matchedAll = true
 
     for (const token of tokens) {
@@ -97,7 +112,8 @@ export function suggestions(query: string, limit = 6) {
 
 /** Zaznacza dopasowane fragmenty — zwraca segmenty do wyrenderowania. */
 export function highlight(text: string, query: string): { s: string; hit: boolean }[] {
-  const tokens = normalize(query).split(' ').filter((t) => t.length > 1)
+  const { phrases, tokens: words } = parseQuery(query)
+  const tokens = [...words, ...phrases.flatMap((p) => p.split(' '))].filter((t) => t.length > 1)
   if (!tokens.length) return [{ s: text, hit: false }]
 
   // normalizacja zmienia długość tekstu, więc dopasowujemy całymi słowami

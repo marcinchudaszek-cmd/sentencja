@@ -26,7 +26,11 @@ interface State {
   collections: Collection[]
   notes: Record<string, string>
   seen: string[]
+  searches: string[]
   settings: Settings
+
+  rememberSearch: (query: string) => void
+  forgetSearches: () => void
 
   toggleFavorite: (id: string) => void
   isFavorite: (id: string) => boolean
@@ -52,6 +56,7 @@ export const useStore = create<State>()(
       collections: [],
       notes: {},
       seen: [],
+      searches: [],
       settings: {
         themeMode: 'dark',
         showOriginal: true,
@@ -120,6 +125,15 @@ export const useStore = create<State>()(
       markSeen: (quoteId) =>
         set((s) => ({ seen: [quoteId, ...s.seen.filter((x) => x !== quoteId)].slice(0, 200) })),
 
+      rememberSearch: (query) => {
+        const q = query.trim()
+        if (q.length < 2) return
+        set((s) => ({
+          searches: [q, ...s.searches.filter((x) => x.toLowerCase() !== q.toLowerCase())].slice(0, 12),
+        }))
+      },
+      forgetSearches: () => set({ searches: [] }),
+
       updateSettings: (patch) => set((s) => ({ settings: { ...s.settings, ...patch } })),
     }),
     {
@@ -130,6 +144,7 @@ export const useStore = create<State>()(
         collections: s.collections,
         notes: s.notes,
         seen: s.seen,
+        searches: s.searches,
         settings: s.settings,
       }),
     },
