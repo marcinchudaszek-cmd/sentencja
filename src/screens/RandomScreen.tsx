@@ -39,9 +39,9 @@ export default function RandomScreen() {
   )
 
   const [quote, setQuote] = useState<Quote | null>(null)
-  // Ostatnio wylosowane trzymamy poza stanem — nie wpływają na render,
-  // a chronią przed powtórką tego samego cytatu dwa razy pod rząd.
-  const ostatnie = useRef<string[]>([])
+  // Ostatnio wylosowane trzymamy poza stanem — nie wpływają na render.
+  const ostatnieCytaty = useRef<string[]>([])
+  const ostatniAutorzy = useRef<string[]>([])
 
   const losuj = useCallback(
     (haptyka = true) => {
@@ -49,10 +49,27 @@ export default function RandomScreen() {
         setQuote(null)
         return
       }
-      const swieze = pula.filter((q) => !ostatnie.current.includes(q.id))
-      const zbior = swieze.length ? swieze : pula
+
+      // Niektórzy autorzy mają w bazie kilkanaście cytatów, więc czyste
+      // losowanie potrafi pokazać tego samego trzy razy pod rząd i sprawia
+      // wrażenie zepsutego. Najpierw więc unikamy ostatnich autorów, potem
+      // ostatnich cytatów, a dopiero na końcu bierzemy cokolwiek z puli.
+      const bezAutorow = pula.filter((q) => !ostatniAutorzy.current.includes(q.authorId))
+      const bezCytatow = pula.filter((q) => !ostatnieCytaty.current.includes(q.id))
+      const zbior = bezAutorow.length ? bezAutorow : bezCytatow.length ? bezCytatow : pula
+
       const wybor = zbior[Math.floor(Math.random() * zbior.length)]
-      ostatnie.current = [wybor.id, ...ostatnie.current].slice(0, Math.min(20, pula.length - 1))
+
+      const autorzyWPuli = new Set(pula.map((q) => q.authorId)).size
+      ostatniAutorzy.current = [wybor.authorId, ...ostatniAutorzy.current].slice(
+        0,
+        Math.max(0, Math.min(5, autorzyWPuli - 1)),
+      )
+      ostatnieCytaty.current = [wybor.id, ...ostatnieCytaty.current].slice(
+        0,
+        Math.max(0, Math.min(20, pula.length - 1)),
+      )
+
       setQuote(wybor)
       markSeen(wybor.id)
       if (haptyka) tap('medium')
@@ -62,7 +79,8 @@ export default function RandomScreen() {
 
   // Zmiana filtrów od razu pokazuje pasujący cytat — bez dodatkowego kliknięcia.
   useEffect(() => {
-    ostatnie.current = []
+    ostatnieCytaty.current = []
+    ostatniAutorzy.current = []
     losuj(false)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [theme, era, tylkoUlubione, hideDisputed])
@@ -102,6 +120,7 @@ export default function RandomScreen() {
   const author = quote ? AUTHOR_BY_ID[quote.authorId] : undefined
   const isFav = quote ? favorites.includes(quote.id) : false
   const filtrAktywny = Boolean(theme || era || tylkoUlubione)
+  const autorzyWPuli = useMemo(() => new Set(pula.map((q) => q.authorId)).size, [pula])
 
   const rozmiar = !quote
     ? ''
@@ -132,6 +151,35 @@ export default function RandomScreen() {
           </button>
         }
       />
+
+      {/* Aktywne filtry pokazujemy zawsze, także po zwinięciu panelu —
+          inaczej zawężona pula wygląda jak zepsute losowanie. */}
+      {filtrAktywny && (
+        <div className="mb-1 flex flex-wrap items-center gap-1.5 px-5 md:px-8">
+          {tylkoUlubione && (
+            <Aktywny onRemove={() => setTylkoUlubione(false)}>❤️ tylko ulubione</Aktywny>
+          )}
+          {theme && (
+            <Aktywny onRemove={() => setTheme(null)}>
+              {THEME_BY_ID[theme]?.emoji} {THEME_BY_ID[theme]?.name}
+            </Aktywny>
+          )}
+          {era && (
+            <Aktywny onRemove={() => setEra(null)}>{ERAS.find((e) => e.id === era)?.name}</Aktywny>
+          )}
+          <button
+            onClick={() => {
+              tap()
+              setTheme(null)
+              setEra(null)
+              setTylkoUlubione(false)
+            }}
+            className="press focus-ring ml-1 text-[11.5px] text-faint hover:text-ink"
+          >
+            wyczyść wszystkie
+          </button>
+        </div>
+      )}
 
       {filtryWidoczne && (
         <motion.div
@@ -307,13 +355,29 @@ export default function RandomScreen() {
         </button>
 
         <p className="mt-3 text-center text-[11.5px] text-faint">
-          Losowanie z {quoteCount(pula.length)}
-          {filtrAktywny && ' po filtrach'}
+          Losowanie z {quoteCount(pula.length)} · {autorzyWPuli}{' '}
+          {autorzyWPuli === 1 ? 'autor' : 'autorów'}
+          {filtrAktywny && ' (po filtrach)'}
         </p>
       </div>
 
       <Toast message={message} />
     </div>
+  )
+}
+
+function Aktywny({ children, onRemove }: { children: React.ReactNode; onRemove: () => void }) {
+  return (
+    <button
+      onClick={() => {
+        tap()
+        onRemove()
+      }}
+      className="press focus-ring inline-flex items-center gap-1.5 rounded-full border border-transparent bg-[color-mix(in_oklab,var(--accent)_26%,transparent)] px-2.5 py-1 text-[11.5px] text-ink"
+    >
+      {children}
+      <Icon name="close" size={11} />
+    </button>
   )
 }
 
