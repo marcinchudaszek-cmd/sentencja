@@ -142,15 +142,20 @@ export default function Home() {
         title="Rzut oka"
         icon="shuffle"
         action={
-          <button
-            onClick={() => {
-              tap()
-              setSpotlight(randomQuote([daily.id, spotlight.id]))
-            }}
-            className="press focus-ring text-[12.5px] font-medium text-accent"
-          >
-            Losuj ponownie
-          </button>
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => {
+                tap()
+                setSpotlight(randomQuote([daily.id, spotlight.id]))
+              }}
+              className="press focus-ring text-[12.5px] font-medium text-accent"
+            >
+              Losuj ponownie
+            </button>
+            <Link to="/losuj" className="focus-ring text-[12.5px] text-faint hover:text-ink">
+              Więcej
+            </Link>
+          </div>
         }
       >
         <div className="px-5 md:px-8">

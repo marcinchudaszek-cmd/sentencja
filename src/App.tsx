@@ -17,10 +17,12 @@ import QuoteScreen from './screens/QuoteScreen'
 import StudioScreen from './screens/StudioScreen'
 import CollectionScreen from './screens/CollectionScreen'
 import BrowseScreen from './screens/BrowseScreen'
+import RandomScreen from './screens/RandomScreen'
 
 const NAV: { to: string; label: string; icon: IconName }[] = [
   { to: '/', label: 'Start', icon: 'home' },
   { to: '/odkrywaj', label: 'Odkrywaj', icon: 'compass' },
+  { to: '/losuj', label: 'Losuj', icon: 'dice' },
   { to: '/przegladaj', label: 'Talia', icon: 'sparkles' },
   { to: '/szukaj', label: 'Szukaj', icon: 'search' },
   { to: '/zbiory', label: 'Zbiory', icon: 'heart' },
@@ -123,6 +125,7 @@ export default function App() {
             <Routes location={location}>
               <Route path="/" element={<Home />} />
               <Route path="/odkrywaj" element={<Explore />} />
+              <Route path="/losuj" element={<RandomScreen />} />
               <Route path="/przegladaj" element={<BrowseScreen />} />
               <Route path="/szukaj" element={<SearchScreen />} />
               <Route path="/zbiory" element={<Library />} />
@@ -200,7 +203,7 @@ function MobileNav() {
             to={n.to}
             end={n.to === '/'}
             onClick={() => tap()}
-            className="press focus-ring relative flex flex-1 flex-col items-center gap-1 rounded-3xl px-1 py-2"
+            className="press focus-ring relative flex flex-1 flex-col items-center gap-0.5 rounded-3xl px-0.5 py-2"
           >
             {({ isActive }) => (
               <>
@@ -212,10 +215,10 @@ function MobileNav() {
                   />
                 )}
                 <span className={`relative ${isActive ? 'text-ink' : 'text-faint'}`}>
-                  <Icon name={n.icon} size={20} />
+                  <Icon name={n.icon} size={19} />
                 </span>
                 <span
-                  className={`relative text-[10px] tracking-tight ${isActive ? 'text-ink' : 'text-faint'}`}
+                  className={`relative text-[9.5px] leading-tight tracking-tight ${isActive ? 'text-ink' : 'text-faint'}`}
                 >
                   {n.label}
                 </span>
