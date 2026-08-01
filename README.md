@@ -57,6 +57,19 @@ npm run build
 npm run preview
 ```
 
+## Widget cytatu dnia
+
+Natywny widget (`DailyQuoteWidget.java`) pokazuje ten sam cytat co aplikacja, ale działa bez
+uruchamiania WebView — czyta własną kopię bazy z `assets/quotes-widget.json`. Kopię generuje
+`scripts/make-widget-data.mjs` z tych samych plików źródłowych, zachowując kolejność, a wybór
+cytatu używa tego samego hasha FNV-1a co `src/lib/daily.ts`. Dzięki temu widget i aplikacja
+nigdy się nie rozjeżdżają.
+
+Dotknięcie widgetu otwiera dany cytat przez `sentencja://cytat/<id>`.
+
+> Generowanie danych widgetu jest wpięte w `npm run android:sync`. Po dopisaniu cytatów nie trzeba
+> pamiętać o osobnym kroku.
+
 ## Android
 
 Wymagania: Android Studio + SDK, JDK 21.

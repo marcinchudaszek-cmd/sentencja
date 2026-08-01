@@ -55,6 +55,23 @@ export default function App() {
     return () => remove?.()
   }, [navigate])
 
+  // Widget na ekranie głównym otwiera aplikację przez sentencja://cytat/<id>.
+  useEffect(() => {
+    if (!isNative) return
+    let remove: (() => void) | undefined
+    const otworz = (url?: string) => {
+      const id = url?.match(/^sentencja:\/\/cytat\/([a-z0-9]+)/i)?.[1]
+      if (id) navigate(`/cytat/${id}`)
+    }
+    import('@capacitor/app').then(({ App: CapApp }) => {
+      void CapApp.getLaunchUrl().then((res) => otworz(res?.url))
+      CapApp.addListener('appUrlOpen', (event) => otworz(event.url)).then((handle) => {
+        remove = () => void handle.remove()
+      })
+    })
+    return () => remove?.()
+  }, [navigate])
+
   useEffect(() => {
     const root = document.documentElement
     const apply = () => {

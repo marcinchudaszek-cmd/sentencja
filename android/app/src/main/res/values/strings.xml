@@ -4,4 +4,7 @@
     <string name="title_activity_main">Sentencja</string>
     <string name="package_name">pl.sentencja.app</string>
     <string name="custom_url_scheme">pl.sentencja.app</string>
+    <string name="widget_label">Cytat dnia</string>
+    <string name="widget_description">Jeden cytat dziennie na ekranie głównym.</string>
+    <string name="widget_fallback">Dotknij, by otworzyć Sentencję.</string>
 </resources>

@@ -13,11 +13,13 @@
     "test:watch": "vitest",
     "check": "npm run typecheck && npm run test",
     "icons": "node scripts/make-icons.mjs",
-    "android:sync": "npm run build && cap sync android",
+    "widget:data": "node scripts/make-widget-data.mjs",
+    "android:sync": "npm run build && npm run widget:data && cap sync android",
     "android:open": "cap open android"
   },
   "dependencies": {
     "@capacitor/android": "^7.0.0",
+    "@capacitor/app": "^7.1.2",
     "@capacitor/core": "^7.0.0",
     "@capacitor/filesystem": "^7.1.8",
     "@capacitor/haptics": "^7.0.0",
