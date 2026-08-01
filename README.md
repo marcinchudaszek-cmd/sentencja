@@ -92,6 +92,31 @@ cd android && ./gradlew assembleDebug
 
 Gotowy plik: `android/app/build/outputs/apk/debug/app-debug.apk`.
 
+### Build release (podpisany)
+
+Klucz podpisujący generujesz **sam** — hasło ma znać tylko Ty. Jeśli zgubisz keystore, nie da się
+już wydać aktualizacji aplikacji w Google Play pod tym samym identyfikatorem, więc zrób kopię
+zapasową w menedżerze haseł lub w innym bezpiecznym miejscu.
+
+```bash
+keytool -genkeypair -v -keystore android/sentencja-release.jks -alias sentencja -keyalg RSA -keysize 4096 -validity 10000
+```
+
+Następnie skopiuj `android/keystore.properties.example` do `android/keystore.properties` i wpisz
+tam ścieżkę, alias oraz hasła. Oba pliki — keystore i properties — są w `.gitignore` i nigdy nie
+trafią do repozytorium.
+
+```bash
+cd android && ./gradlew assembleRelease   # podpisany APK
+cd android && ./gradlew bundleRelease     # AAB do Google Play
+```
+
+Wyniki: `android/app/build/outputs/apk/release/app-release.apk` oraz
+`android/app/build/outputs/bundle/release/app-release.aab`.
+
+> Bez pliku `keystore.properties` build release nadal się wykona, ale APK zostanie niepodpisany
+> i nie da się go zainstalować. Gradle wypisze wtedy ostrzeżenie.
+
 > Jeśli Gradle nie widzi JDK, ustaw `JAVA_HOME` na katalog z JDK 21
 > (np. `C:\Program Files\Eclipse Adoptium\jdk-21...`), a ścieżkę do SDK wpisz w
 > `android/local.properties` jako `sdk.dir=C:/Users/<user>/AppData/Local/Android/Sdk`.
