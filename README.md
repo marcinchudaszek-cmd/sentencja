@@ -57,6 +57,25 @@ npm run build
 npm run preview
 ```
 
+## Publikacja wersji web
+
+Workflow `.github/workflows/deploy.yml` buduje i publikuje aplikację na GitHub Pages po każdym
+pushu na `main`. Najpierw uruchamia `npm run check` — przy czerwonych testach publikacja się nie
+odbywa.
+
+Uruchomienie jednorazowo:
+
+```bash
+git remote add origin git@github.com:UZYTKOWNIK/sentencja.git
+git push -u origin main
+```
+
+Potem w ustawieniach repozytorium: **Settings → Pages → Source → GitHub Actions**.
+
+Ścieżki w buildzie są względne (`base: './'`), a routing działa na hashu, więc aplikacja działa
+poprawnie także pod adresem w podkatalogu, np. `uzytkownik.github.io/sentencja/`. Service worker
+sprawia, że po pierwszej wizycie strona działa offline i da się ją zainstalować jako PWA.
+
 ## Widget cytatu dnia
 
 Natywny widget (`DailyQuoteWidget.java`) pokazuje ten sam cytat co aplikacja, ale działa bez
