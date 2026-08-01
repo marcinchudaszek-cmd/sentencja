@@ -5,12 +5,13 @@ aplikacja webowa (PWA) i natywna aplikacja na Androida — ten sam kod, pełne d
 
 ## Co jest w środku
 
-- **447 cytatów** — każdy po polsku, z oryginałem (łacina, greka, angielski, niemiecki, francuski,
+- **511 cytatów** — każdy po polsku, z oryginałem (łacina, greka, angielski, niemiecki, francuski,
   chiński, perski i inne), autorem i źródłem.
-- **183 autorów** z biogramami i latami życia, od Homera po współczesność.
+- **221 autorów** z 37 krajów, z biogramami i latami życia — od Safony i Homera po współczesność.
 - **26 tematów** (miłość, czas, władza, cierpienie, humor…) i **7 epok**.
-- Cytaty o niepewnym pochodzeniu są **wyraźnie oznaczone** jako sporne — z informacją, skąd
-  przypisanie się wzięło. Można je globalnie odfiltrować w ustawieniach.
+- 87 cytatów o niepewnym pochodzeniu jest **wyraźnie oznaczonych** jako sporne — każdy z notatką,
+  skąd wzięło się przypisanie (test pilnuje, by żadne oznaczenie nie zostało bez wyjaśnienia).
+  Można je globalnie odfiltrować w ustawieniach.
 
 ## Funkcje
 
@@ -19,7 +20,7 @@ aplikacja webowa (PWA) i natywna aplikacja na Androida — ten sam kod, pełne d
 | **Start** | Cytat dnia (ten sam dla wszystkich, deterministyczny z daty), losowy strzał, skróty do tematów i epok |
 | **Odkrywaj** | Trzy przekroje bazy: tematy, autorzy (z wyszukiwarką, filtrem epoki i trzema sortowaniami), epoki |
 | **Talia** | Karty do przesuwania — w prawo do ulubionych, w lewo dalej |
-| **Szukaj** | Wyszukiwanie pełnotekstowe po treści, oryginale, autorze, temacie i źródle; odporne na polskie znaki (`wolnosc` znajdzie `wolność`) |
+| **Szukaj** | Wyszukiwanie pełnotekstowe po treści, oryginale, autorze, temacie i źródle; odporne na polskie znaki (`wolnosc` znajdzie `wolność`). Fraza w cudzysłowie szuka dosłownie, wyniki filtrują się po epoce i temacie, historia zapytań zostaje na później |
 | **Zbiory** | Ulubione, własne kolekcje z emoji i notatki do cytatów |
 | **Studio** | Generator grafik: 6 motywów, 4 formaty (kwadrat, story, tapeta, panorama), eksport PNG w pełnej rozdzielczości |
 | **Ustawienia** | Motyw jasny/ciemny/systemowy, skala tekstu, oryginały, filtr spornych, powiadomienie o cytacie dnia, eksport danych |
@@ -41,6 +42,12 @@ na urządzeniu. Nic nie wychodzi na zewnątrz — aplikacja nie ma backendu.
 ```bash
 npm install
 npm run dev
+```
+
+Kontrola jakości przed commitem — typy plus 29 testów spójności bazy i wyszukiwarki:
+
+```bash
+npm run check
 ```
 
 Produkcyjna wersja:

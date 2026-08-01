@@ -55,6 +55,11 @@ describe('spójność bazy cytatów', () => {
     const zle = QUOTES.filter((q) => q.original && !q.lang).map((q) => q.id)
     expect(zle).toEqual([])
   })
+
+  it('sporna atrybucja zawsze tłumaczy, skąd się wzięła', () => {
+    const zle = QUOTES.filter((q) => q.disputed && !q.source?.trim()).map((q) => q.id)
+    expect(zle).toEqual([])
+  })
 })
 
 describe('spójność autorów', () => {

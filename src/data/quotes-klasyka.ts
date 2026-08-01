@@ -119,4 +119,19 @@ export const QUOTES_KLASYKA: QuoteTuple[] = [
   ['b110', 'Traktuj ludzi tak, jakby byli tym, kim powinni być, a pomożesz im stać się tym, kim mogą być.', '', 'de', 'goethe', ['czlowiek', 'nadzieja'], '„Lata nauki Wilhelma Meistra" — parafraza'],
   ['b111', 'Nikt nie jest bardziej zniewolony niż ten, kto fałszywie sądzi, że jest wolny.', 'Niemand ist mehr Sklave, als der sich für frei hält, ohne es zu sein', 'de', 'goethe', ['wolnosc', 'prawda'], '„Powinowactwa z wyboru"'],
   ['b112', 'Przeciw głupocie sami bogowie walczą na próżno.', 'Mit der Dummheit kämpfen Götter selbst vergebens', 'de', 'schiller', ['humor', 'madrosc'], '„Dziewica Orleańska" III, 6'],
+
+  // ——— Uzupełnienie ———
+  ['b113', 'Jestem piórem na tchnieniu Boga.', 'Ich bin eine Feder auf dem Atem Gottes', 'de', 'hildegarda', ['wiara', 'czlowiek'], 'listy'],
+  ['b114', 'Człowiek jest naczyniem, które Bóg ukształtował dla siebie i napełnił swoim tchnieniem.', '', 'la', 'hildegarda', ['czlowiek', 'wiara'], '„Scivias"'],
+  ['b115', 'Wszystko będzie dobrze i wszelka rzecz będzie dobra.', 'All shall be well, and all manner of thing shall be well', 'en', 'julianna-norwich', ['nadzieja', 'wiara'], '„Objawienia Bożej miłości"'],
+  ['b116', 'Nie wszyscy mężczyźni podzielają pogląd, że kształcenie kobiet jest szkodliwe.', '', 'fr', 'pizan', ['wiedza', 'wolnosc'], '„Miasto dam", 1405'],
+  ['b117', 'Gdyby dziewczynki posyłano do szkoły tak jak chłopców, uczyłyby się i rozumiały wszystko równie dobrze.', '', 'fr', 'pizan', ['wiedza', 'prawda'], '„Miasto dam", 1405'],
+  ['b118', 'Niech nic cię nie niepokoi, nic nie przeraża. Wszystko mija — Bóg się nie zmienia.', 'Nada te turbe, nada te espante. Todo se pasa, Dios no se muda', 'es', 'teresa-avila', ['wiara', 'nadzieja'], 'zakładka w brewiarzu'],
+  ['b119', 'Więcej łez wylano nad wysłuchanymi modlitwami niż nad niewysłuchanymi.', '', 'es', 'teresa-avila', ['wiara', 'cierpienie'], 'przypisywane', 1],
+  ['b120', 'Głupi mężczyźni, którzy oskarżacie kobietę bez racji, nie widząc, że sami jesteście przyczyną tego, co jej zarzucacie.', 'Hombres necios que acusáis a la mujer sin razón', 'es', 'juana-cruz', ['czlowiek', 'prawda'], 'redondillas, ok. 1689'],
+  ['b121', 'Nie uczę się, by wiedzieć więcej, lecz by mniej nie wiedzieć.', '', 'es', 'juana-cruz', ['wiedza', 'madrosc'], '„Odpowiedź siostrze Filotei"'],
+  ['b122', 'Nie pragnę, by kobiety miały władzę nad mężczyznami, lecz nad sobą.', 'I do not wish them to have power over men, but over themselves', 'en', 'wollstonecraft', ['wolnosc', 'czlowiek'], '„Wołanie o prawa kobiety", 1792'],
+  ['b123', 'Umysł nie zna płci.', '', 'en', 'wollstonecraft', ['wiedza', 'prawda'], 'parafraza z „Wołania o prawa kobiety"', 1],
+  ['b124', 'Chwała jest jaskrawą żałobą szczęścia.', 'La gloire est le deuil éclatant du bonheur', 'fr', 'de-stael', ['sukces', 'szczescie'], '„Korynna"'],
+  ['b125', 'Zrozumieć wszystko czyni bardzo pobłażliwym.', 'Tout comprendre rend très indulgent', 'fr', 'de-stael', ['madrosc', 'czlowiek'], '„Korynna" — źródło formuły „wszystko zrozumieć to wszystko wybaczyć"'],
 ]

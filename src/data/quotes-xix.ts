@@ -118,4 +118,17 @@ export const QUOTES_XIX: QuoteTuple[] = [
   ['c114', 'Ten, kto nie czyta gazet, jest niedoinformowany; ten, kto je czyta, jest źle poinformowany.', '', 'en', 'twain', ['prawda', 'humor'], 'przypisywane', 1],
   ['c115', 'Człowiek nie ma nic w życiu prócz czasu — a mimo to zabija go, jakby był niewyczerpany.', '', '', 'tagore', ['czas', 'zycie'], 'przypisywane'],
   ['c116', 'Jeśli zamkniesz drzwi przed wszystkimi błędami, prawda zostanie na zewnątrz.', '', '', 'tagore', ['prawda', 'madrosc'], '„Zabłąkane ptaki"'],
+
+  // ——— Uzupełnienie ———
+  ['c117', 'Jest prawdą powszechnie uznaną, że samotnemu mężczyźnie z pokaźnym majątkiem brak tylko żony.', 'It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife', 'en', 'austen', ['milosc', 'humor'], '„Duma i uprzedzenie" — pierwsze zdanie'],
+  ['c118', 'Nie ma nic równie zwodniczego jak pozory skromności.', 'Nothing is more deceitful than the appearance of humility', 'en', 'austen', ['prawda', 'czlowiek'], '„Duma i uprzedzenie"'],
+  ['c119', 'Strzeż się — jestem nieustraszony, a przez to potężny.', 'Beware; for I am fearless, and therefore powerful', 'en', 'shelley-m', ['odwaga', 'cierpienie'], '„Frankenstein"'],
+  ['c120', 'Nic nie jest równie bolesne dla ludzkiego umysłu jak martwota bezczynności po ciągu gwałtownych zdarzeń.', '', 'en', 'shelley-m', ['cierpienie', 'zycie'], '„Frankenstein"'],
+  ['c121', 'Nie jestem ptakiem i żadna sieć mnie nie schwyta. Jestem wolną istotą ludzką o niezależnej woli.', 'I am no bird; and no net ensnares me: I am a free human being with an independent will', 'en', 'bronte-c', ['wolnosc', 'czlowiek'], '„Dziwne losy Jane Eyre"'],
+  ['c122', 'Życie wydaje mi się zbyt krótkie, by spędzać je na pielęgnowaniu wrogości.', 'Life appears to me too short to be spent in nursing animosity', 'en', 'bronte-c', ['zycie', 'madrosc'], '„Dziwne losy Jane Eyre"'],
+  ['c123', 'Nigdy nie jest za późno, by stać się tym, kim mogłeś być.', '', 'en', 'eliot-g', ['zmiana', 'nadzieja'], 'przypisywane, brak w pismach', 1],
+  ['c124', 'Zwierzęta to bardzo mili przyjaciele — nie zadają pytań i nie stawiają zarzutów.', 'Animals are such agreeable friends — they ask no questions, they pass no criticisms', 'en', 'eliot-g', ['przyjazn', 'humor'], '„Sceny z życia duchownych"'],
+  ['c125', 'Swój sukces przypisuję temu, że nigdy nie szukałam wymówek ani nie przyjmowałam ich od innych.', 'I attribute my success to this: I never gave or took any excuse', 'en', 'nightingale', ['praca', 'sukces'], 'przypisywane'],
+  ['c126', 'Pierwszym wymogiem szpitala powinno być, by nie szkodził chorym.', 'It may seem a strange principle to enunciate that the very first requirement in a hospital is that it should do the sick no harm', 'en', 'nightingale', ['praca', 'madrosc'], '„Notes on Hospitals", 1863'],
+  ['c127', 'Na to mamy cztery ściany i sufit, aby brudy swoje prać w domu.', '', 'pl', 'zapolska', ['prawda', 'humor'], '„Moralność pani Dulskiej"'],
 ]
