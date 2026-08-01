@@ -1,5 +1,7 @@
 # Sentencja — słynne cytaty
 
+**→ [marcinchudaszek-cmd.github.io/sentencja](https://marcinchudaszek-cmd.github.io/sentencja/)**
+
 Kolekcja cytatów z podziałem na **tematy, autorów i epoki**. Jedna baza, dwie platformy:
 aplikacja webowa (PWA) i natywna aplikacja na Androida — ten sam kod, pełne działanie offline.
 
@@ -19,6 +21,7 @@ aplikacja webowa (PWA) i natywna aplikacja na Androida — ten sam kod, pełne d
 |---|---|
 | **Start** | Cytat dnia (ten sam dla wszystkich, deterministyczny z daty), losowy strzał, skróty do tematów i epok |
 | **Odkrywaj** | Trzy przekroje bazy: tematy, autorzy (z wyszukiwarką, filtrem epoki i trzema sortowaniami), epoki |
+| **Losuj** | Jeden przypadkowy cytat na pełnym ekranie; pula zawężana tematem, epoką lub ulubionymi. Kolejny wywołuje przycisk, spacja na klawiaturze albo potrząśnięcie telefonem |
 | **Talia** | Karty do przesuwania — w prawo do ulubionych, w lewo dalej |
 | **Szukaj** | Wyszukiwanie pełnotekstowe po treści, oryginale, autorze, temacie i źródle; odporne na polskie znaki (`wolnosc` znajdzie `wolność`). Fraza w cudzysłowie szuka dosłownie, wyniki filtrują się po epoce i temacie, historia zapytań zostaje na później |
 | **Zbiory** | Ulubione, własne kolekcje z emoji i notatki do cytatów |
