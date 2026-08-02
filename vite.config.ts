@@ -1,5 +1,5 @@
 import { fileURLToPath, URL } from 'node:url'
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vitest/config'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
@@ -45,5 +45,10 @@ export default defineConfig({
   build: {
     target: 'es2022',
     chunkSizeWarningLimit: 1200,
+  },
+  test: {
+    // Katalog e2e należy do Playwrighta — vitest nie potrafi go uruchomić
+    // i bez tego ograniczenia wywracał się na jego plikach.
+    include: ['src/**/*.{test,spec}.{ts,tsx}'],
   },
 })
