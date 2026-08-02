@@ -20,6 +20,9 @@ import BrowseScreen from './screens/BrowseScreen'
 import RandomScreen from './screens/RandomScreen'
 import TimelineScreen from './screens/TimelineScreen'
 
+/** Poza komponentem, żeby przetrwało przemontowanie w obrębie tego samego procesu. */
+let adresStartowyZuzyty = false
+
 const NAV: { to: string; label: string; icon: IconName }[] = [
   { to: '/', label: 'Start', icon: 'home' },
   { to: '/odkrywaj', label: 'Odkrywaj', icon: 'compass' },
@@ -67,7 +70,13 @@ export default function App() {
       if (id) navigate(`/cytat/${id}`)
     }
     import('@capacitor/app').then(({ App: CapApp }) => {
-      void CapApp.getLaunchUrl().then((res) => otworz(res?.url))
+      // Adres startowy honorujemy dokładnie raz. System potrafi odtworzyć
+      // aktywność z tym samym intentem, a wtedy aplikacja bez tej blokady
+      // wracałaby w kółko do cytatu sprzed wielu dni.
+      if (!adresStartowyZuzyty) {
+        adresStartowyZuzyty = true
+        void CapApp.getLaunchUrl().then((res) => otworz(res?.url))
+      }
       CapApp.addListener('appUrlOpen', (event) => otworz(event.url)).then((handle) => {
         remove = () => void handle.remove()
       })
