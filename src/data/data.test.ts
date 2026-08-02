@@ -73,6 +73,15 @@ describe('spójność autorów', () => {
     expect(zle).toEqual([])
   })
 
+  it('biogram to pełny opis, nie jedno zdanie z rozpędu', () => {
+    // Dwa zdania i ~150 znaków to próg, poniżej którego wpis znów robi się
+    // notatką zamiast opisu — łatwo o to przy dopisywaniu nowych autorów.
+    const zaKrotkie = AUTHORS.filter(
+      (a) => a.bio.length < 150 || (a.bio.match(/[.!?]/g) ?? []).length < 2,
+    ).map((a) => `${a.id} (${a.bio.length} zn.)`)
+    expect(zaKrotkie).toEqual([])
+  })
+
   it('daty życia są w sensownej kolejności', () => {
     const zle = AUTHORS.filter((a) => a.born && a.died && a.born > a.died).map((a) => a.id)
     expect(zle).toEqual([])
