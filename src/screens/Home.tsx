@@ -71,7 +71,9 @@ export default function Home() {
           </button>
 
           {daily.original && (
-            <p className="mt-4 text-[13px] leading-relaxed text-faint italic">{daily.original}</p>
+            <p lang={daily.lang} className="mt-4 text-[13px] leading-relaxed text-faint italic">
+              {daily.original}
+            </p>
           )}
 
           <Link

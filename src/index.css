@@ -12,7 +12,8 @@
   --border-strong: #ffffff2e;
   --text: #f4f4f5;
   --muted: #a1a1aa;
-  --faint: #71717a;
+  /* 4.91:1 na tle strony — drobne podpisy też muszą spełniać WCAG AA */
+  --faint: #7d7d87;
   --accent: #a78bfa;
   --accent-2: #22d3ee;
   --shadow: 0 20px 60px -20px #000000cc;
@@ -27,7 +28,8 @@ html.light {
   --border-strong: #1c191720;
   --text: #171412;
   --muted: #57534e;
-  --faint: #8a827a;
+  /* 4.95:1 na tle strony */
+  --faint: #736c66;
   --accent: #6d28d9;
   --accent-2: #0e7490;
   --shadow: 0 18px 50px -24px #57534e55;

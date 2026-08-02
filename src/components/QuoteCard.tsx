@@ -64,7 +64,9 @@ export function QuoteCard({ quote, variant = 'card', query, index = 0, onShared 
         </p>
 
         {showOriginal && quote.original && variant === 'card' && (
-          <p className="mt-2.5 text-[12.5px] leading-relaxed text-faint italic">{quote.original}</p>
+          <p lang={quote.lang} className="mt-2.5 text-[12.5px] leading-relaxed text-faint italic">
+            {quote.original}
+          </p>
         )}
       </button>
 

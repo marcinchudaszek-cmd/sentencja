@@ -85,11 +85,13 @@ export default function RandomScreen() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [theme, era, tylkoUlubione, hideDisputed])
 
-  // Spacja, Enter lub R na klawiaturze losują kolejny.
+  // Spacja, Enter lub R losują kolejny — ale nigdy wtedy, gdy fokus stoi na
+  // przycisku czy polu, bo spacja i enter muszą tam działać po swojemu.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
+      if (e.metaKey || e.ctrlKey || e.altKey) return
       const cel = e.target as HTMLElement | null
-      if (cel && /^(INPUT|TEXTAREA)$/.test(cel.tagName)) return
+      if (cel?.closest('input, textarea, select, button, a, [contenteditable="true"]')) return
       if (e.code === 'Space' || e.code === 'Enter' || e.key.toLowerCase() === 'r') {
         e.preventDefault()
         losuj()
@@ -269,7 +271,9 @@ export default function RandomScreen() {
             >
               <p className={`quote-serif tracking-[-0.015em] ${rozmiar}`}>{quote.pl}</p>
               {showOriginal && quote.original && (
-                <p className="mt-4 text-[12.5px] leading-relaxed text-faint italic">{quote.original}</p>
+                <p lang={quote.lang} className="mt-4 text-[12.5px] leading-relaxed text-faint italic">
+                  {quote.original}
+                </p>
               )}
             </button>
 

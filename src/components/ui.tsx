@@ -199,12 +199,19 @@ export function StatPill({ value, label }: { value: string | number; label: stri
 }
 
 export function Toast({ message }: { message: string | null }) {
-  if (!message) return null
+  // Region żyje w drzewie także pusty — inaczej czytnik ekranu nie ogłosi
+  // komunikatu, który pojawia się razem z całym kontenerem.
   return (
-    <div className="pointer-events-none fixed inset-x-0 bottom-28 z-50 flex justify-center px-6 md:bottom-10">
-      <div className="glass-strong animate-rise rounded-full px-4 py-2.5 text-[13px] shadow-[var(--shadow)]">
-        {message}
-      </div>
+    <div
+      role="status"
+      aria-live="polite"
+      className="pointer-events-none fixed inset-x-0 bottom-28 z-50 flex justify-center px-6 md:bottom-10"
+    >
+      {message && (
+        <div className="glass-strong animate-rise rounded-full px-4 py-2.5 text-[13px] shadow-[var(--shadow)]">
+          {message}
+        </div>
+      )}
     </div>
   )
 }

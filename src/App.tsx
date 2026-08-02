@@ -104,6 +104,12 @@ export default function App() {
 
   return (
     <div className="min-h-dvh text-ink">
+      <a
+        href="#scroll-root"
+        className="focus-ring sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-xl focus:bg-[var(--accent)] focus:px-4 focus:py-2 focus:text-[13px] focus:font-medium focus:text-black"
+      >
+        Przejdź do treści
+      </a>
       <Aurora />
 
       <div className="mx-auto flex min-h-dvh w-full max-w-6xl overflow-x-hidden">
@@ -113,7 +119,8 @@ export default function App() {
             ten element flex ponad szerokość ekranu (domyślne min-width: auto). */}
         <main
           id="scroll-root"
-          className="relative min-h-dvh w-full min-w-0 flex-1 pb-[calc(5.6rem+env(safe-area-inset-bottom))] md:pb-12"
+          tabIndex={-1}
+          className="relative min-h-dvh w-full min-w-0 flex-1 pb-[calc(5.6rem+env(safe-area-inset-bottom))] outline-none md:pb-12"
         >
           {/* Klucz na ścieżce wymusza przemontowanie, więc każdy ekran wchodzi z animacją.
               Świadomie bez AnimatePresence — tryb „wait" wstrzymywał montowanie nowej trasy. */}

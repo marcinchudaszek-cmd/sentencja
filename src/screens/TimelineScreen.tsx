@@ -163,10 +163,21 @@ export default function TimelineScreen() {
               <g
                 key={p.author.id}
                 opacity={przygaszony ? 0.2 : 1}
+                role="button"
+                tabIndex={przygaszony ? -1 : 0}
+                aria-pressed={aktywny}
+                aria-label={`${p.author.name}, ${lifespan(p.author)}, ${quoteCount(p.cytaty)}`}
                 onClick={() => {
                   tap()
                   setWybrany(aktywny ? null : p)
                 }}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault()
+                    setWybrany(aktywny ? null : p)
+                  }
+                }}
+                className="focus-ring"
                 style={{ cursor: 'pointer' }}
               >
                 <title>{`${p.author.name} — ${lifespan(p.author)}, ${quoteCount(p.cytaty)}`}</title>

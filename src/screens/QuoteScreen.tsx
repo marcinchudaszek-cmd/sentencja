@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { motion } from 'motion/react'
 import {
@@ -93,7 +93,11 @@ export default function QuoteScreen() {
               <div className="mb-1.5 text-[10.5px] font-medium uppercase tracking-[0.16em] text-faint">
                 oryginał{quote.lang ? ` · ${LANG_NAMES[quote.lang] ?? quote.lang}` : ''}
               </div>
-              <p className="text-[14px] leading-relaxed text-muted italic">{quote.original}</p>
+              {/* lang pozwala czytnikowi ekranu przeczytać łacinę czy grekę
+                  właściwą wymową zamiast po polsku */}
+              <p lang={quote.lang} className="text-[14px] leading-relaxed text-muted italic">
+                {quote.original}
+              </p>
             </div>
           )}
 
@@ -338,6 +342,19 @@ function CollectionPicker({
   onClose: () => void
 }) {
   const [name, setName] = useState('')
+  const panel = useRef<HTMLDivElement>(null)
+
+  // Escape zamyka, a fokus wchodzi do okna — inaczej czytnik ekranu i
+  // klawiatura zostają w treści pod spodem.
+  useEffect(() => {
+    panel.current?.focus()
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose()
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [onClose])
+
   return (
     <div className="fixed inset-0 z-50 flex items-end justify-center md:items-center">
       <button
@@ -346,13 +363,20 @@ function CollectionPicker({
         className="absolute inset-0 bg-black/55 backdrop-blur-sm"
       />
       <motion.div
+        ref={panel}
+        tabIndex={-1}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="tytul-kolekcji"
         initial={{ y: 40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ type: 'spring', stiffness: 380, damping: 34 }}
-        className="glass-strong relative w-full max-w-md rounded-t-[1.8rem] p-5 pb-[max(1.25rem,env(safe-area-inset-bottom))] md:rounded-[1.8rem]"
+        className="glass-strong relative w-full max-w-md rounded-t-[1.8rem] p-5 pb-[max(1.25rem,env(safe-area-inset-bottom))] outline-none md:rounded-[1.8rem]"
       >
         <div className="mx-auto mb-4 h-1 w-10 rounded-full bg-[var(--border-strong)] md:hidden" />
-        <h2 className="mb-3 text-[15px] font-medium">Dodaj do kolekcji</h2>
+        <h2 id="tytul-kolekcji" className="mb-3 text-[15px] font-medium">
+          Dodaj do kolekcji
+        </h2>
 
         <div className="max-h-[45dvh] space-y-1.5 overflow-y-auto">
           {collections.map((c) => {
