@@ -18,6 +18,7 @@ import StudioScreen from './screens/StudioScreen'
 import CollectionScreen from './screens/CollectionScreen'
 import BrowseScreen from './screens/BrowseScreen'
 import RandomScreen from './screens/RandomScreen'
+import TimelineScreen from './screens/TimelineScreen'
 
 const NAV: { to: string; label: string; icon: IconName }[] = [
   { to: '/', label: 'Start', icon: 'home' },
@@ -134,6 +135,7 @@ export default function App() {
               <Route path="/autor/:id" element={<AuthorScreen />} />
               <Route path="/temat/:id" element={<ThemeScreen />} />
               <Route path="/epoka/:id" element={<EraScreen />} />
+              <Route path="/os-czasu" element={<TimelineScreen />} />
               <Route path="/cytat/:id" element={<QuoteScreen />} />
               <Route path="/studio/:id" element={<StudioScreen />} />
               <Route path="*" element={<Home />} />

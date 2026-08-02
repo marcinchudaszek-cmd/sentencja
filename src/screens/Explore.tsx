@@ -16,6 +16,7 @@ import { Icon } from '@/components/Icon'
 import { initials } from '@/components/QuoteCard'
 import { normalize } from '@/lib/search'
 import { quoteCount } from '@/lib/text'
+import { LinkDoOsi } from './TimelineScreen'
 import { tap } from '@/lib/native'
 
 type Tab = 'tematy' | 'autorzy' | 'epoki'
@@ -202,6 +203,9 @@ function Authors() {
 function Eras() {
   return (
     <div className="grid gap-3 px-5 md:grid-cols-2 md:px-8">
+      <div className="md:col-span-2">
+        <LinkDoOsi />
+      </div>
       {ERAS.map((e, i) => (
         <motion.div
           key={e.id}
