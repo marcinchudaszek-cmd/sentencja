@@ -21,7 +21,8 @@ aplikacja webowa (PWA) i natywna aplikacja na Androida — ten sam kod, pełne d
 |---|---|
 | **Start** | Cytat dnia (ten sam dla wszystkich, deterministyczny z daty), losowy strzał, skróty do tematów i epok |
 | **Odkrywaj** | Trzy przekroje bazy: tematy, autorzy (z wyszukiwarką, filtrem epoki i trzema sortowaniami), epoki |
-| **Losuj** | Jeden przypadkowy cytat na pełnym ekranie; pula zawężana tematem, epoką lub ulubionymi. Kolejny wywołuje przycisk, spacja na klawiaturze albo potrząśnięcie telefonem |
+| **Losuj** | Jeden przypadkowy cytat na pełnym ekranie; pula zawężana tematem, epoką lub ulubionymi. Kolejny wywołuje przycisk, spacja na klawiaturze albo potrząśnięcie telefonem. Losowanie nie powtarza autora pod rząd |
+| **Oś czasu** | 221 autorów na nieliniowej skali 26 wieków, siatka gęstości tematów w epokach, rozkład geograficzny |
 | **Talia** | Karty do przesuwania — w prawo do ulubionych, w lewo dalej |
 | **Szukaj** | Wyszukiwanie pełnotekstowe po treści, oryginale, autorze, temacie i źródle; odporne na polskie znaki (`wolnosc` znajdzie `wolność`). Fraza w cudzysłowie szuka dosłownie, wyniki filtrują się po epoce i temacie, historia zapytań zostaje na później |
 | **Zbiory** | Ulubione, własne kolekcje z emoji i notatki do cytatów |
@@ -51,6 +52,12 @@ Kontrola jakości przed commitem — typy plus 29 testów spójności bazy i wys
 
 ```bash
 npm run check
+```
+
+Testy E2E (16 scenariuszy na profilu telefonu i desktopu, na zbudowanej wersji):
+
+```bash
+npm run e2e
 ```
 
 Produkcyjna wersja:

@@ -131,7 +131,7 @@ export default function SearchScreen() {
                   Wyczyść
                 </button>
               </div>
-              <div className="mb-7 flex flex-wrap gap-2">
+              <div role="group" aria-label="Ostatnio szukane" className="mb-7 flex flex-wrap gap-2">
                 {searches.map((s) => (
                   <button
                     key={s}

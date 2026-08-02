@@ -157,7 +157,11 @@ export default function RandomScreen() {
       {/* Aktywne filtry pokazujemy zawsze, także po zwinięciu panelu —
           inaczej zawężona pula wygląda jak zepsute losowanie. */}
       {filtrAktywny && (
-        <div className="mb-1 flex flex-wrap items-center gap-1.5 px-5 md:px-8">
+        <div
+          role="group"
+          aria-label="Aktywne filtry"
+          className="mb-1 flex flex-wrap items-center gap-1.5 px-5 md:px-8"
+        >
           {tylkoUlubione && (
             <Aktywny onRemove={() => setTylkoUlubione(false)}>❤️ tylko ulubione</Aktywny>
           )}
@@ -233,18 +237,6 @@ export default function RandomScreen() {
               ))}
             </div>
 
-            {filtrAktywny && (
-              <button
-                onClick={() => {
-                  setTheme(null)
-                  setEra(null)
-                  setTylkoUlubione(false)
-                }}
-                className="press focus-ring mt-3 text-[12px] text-accent"
-              >
-                Wyczyść filtry
-              </button>
-            )}
           </div>
         </motion.div>
       )}
