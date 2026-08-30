@@ -7,7 +7,9 @@ export type EraId =
   | 'xx'
   | 'wspolczesnosc'
 
-export type Lang = 'en' | 'la' | 'grc' | 'de' | 'fr' | 'it' | 'es' | 'ru' | 'pl' | 'ar' | 'fa' | 'zh' | 'sa' | 'pt'
+export type Lang =
+  | 'en' | 'la' | 'grc' | 'de' | 'fr' | 'it' | 'es' | 'ru' | 'pl'
+  | 'ar' | 'fa' | 'zh' | 'sa' | 'pt' | 'ja'
 
 export interface Era {
   id: EraId

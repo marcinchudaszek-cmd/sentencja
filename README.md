@@ -7,11 +7,12 @@ aplikacja webowa (PWA) i natywna aplikacja na Androida — ten sam kod, pełne d
 
 ## Co jest w środku
 
-- **511 cytatów** — każdy po polsku, z oryginałem (łacina, greka, angielski, niemiecki, francuski,
-  chiński, perski i inne), autorem i źródłem.
-- **221 autorów** z 37 krajów, z biogramami i latami życia — od Safony i Homera po współczesność.
+- **732 cytaty** — każdy po polsku, z oryginałem (łacina, greka, angielski, niemiecki, francuski,
+  chiński, perski, japoński i inne), autorem i źródłem.
+- **282 autorów** z 39 krajów, z biogramami na dwa–trzy zdania i latami życia — od Safony i Homera
+  po współczesność.
 - **26 tematów** (miłość, czas, władza, cierpienie, humor…) i **7 epok**.
-- 87 cytatów o niepewnym pochodzeniu jest **wyraźnie oznaczonych** jako sporne — każdy z notatką,
+- 122 cytaty o niepewnym pochodzeniu są **wyraźnie oznaczone** jako sporne — każdy z notatką,
   skąd wzięło się przypisanie (test pilnuje, by żadne oznaczenie nie zostało bez wyjaśnienia).
   Można je globalnie odfiltrować w ustawieniach.
 

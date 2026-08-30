@@ -127,4 +127,18 @@ export const QUOTES_ANTYK: QuoteTuple[] = [
   ['a121', 'Umownie istnieje barwa, umownie słodycz, umownie gorycz — naprawdę są tylko atomy i próżnia.', '', 'grc', 'demokryt', ['natura', 'prawda'], 'fragment B9'],
   ['a122', 'Jestem obywatelem świata.', 'κοσμοπολίτης', 'grc', 'diogenes', ['wolnosc', 'czlowiek'], 'Diogenes Laertios, „Żywoty" VI'],
   ['a123', 'Nie to, co posiadamy, lecz to, czym się cieszymy, stanowi naszą obfitość.', '', 'grc', 'epikur', ['szczescie', 'pieniadze'], 'przypisywane', 1],
+
+  // ——— Rozszerzenie: przyjaźń, pieniądze, śmierć, wojna ———
+  ['a124', 'Przyjaźń jest zgodnością we wszystkich sprawach boskich i ludzkich, połączoną z życzliwością i przywiązaniem.', 'Amicitia est rerum humanarum et divinarum consensio cum benevolentia et caritate', 'la', 'cyceron', ['przyjazn', 'milosc'], '„Leliusz o przyjaźni"'],
+  ['a125', 'Kto patrzy na prawdziwego przyjaciela, patrzy niejako na własne odbicie.', '', 'la', 'cyceron', ['przyjazn', 'czlowiek'], '„Leliusz o przyjaźni"'],
+  ['a126', 'Przyjaźń doskonała to przyjaźń ludzi dobrych i podobnych w cnocie — takich przyjaźni jest niewiele i wymagają czasu.', '', 'grc', 'arystoteles', ['przyjazn', 'czas'], '„Etyka nikomachejska" VIII'],
+  ['a127', 'Szczęście zależy od nas samych.', '', 'grc', 'arystoteles', ['szczescie', 'czlowiek'], '„Etyka nikomachejska" I'],
+  ['a128', 'Długo się zastanawiaj, czy kogoś dopuścić do przyjaźni. Gdy już postanowisz — przyjmij go całym sercem.', 'Diu cogita an tibi in amicitiam aliquis recipiendus sit', 'la', 'seneka', ['przyjazn', 'madrosc'], 'Listy moralne 3'],
+  ['a129', 'Nie jest biedny ten, kto ma mało, lecz ten, kto pragnie więcej.', 'Non qui parum habet, sed qui plus cupit, pauper est', 'la', 'seneka', ['pieniadze', 'szczescie'], 'Listy moralne 2'],
+  ['a130', 'Bogactwo naturalne ma swoje granice i łatwo je zdobyć; bogactwo urojone nie zna kresu.', '', 'grc', 'epikur', ['pieniadze', 'madrosc'], 'Sentencje główne 15'],
+  ['a131', 'Nie ma nic tak pewnego jak śmierć i nic tak niepewnego jak jej godzina.', '', 'la', 'cyceron', ['smierc', 'czas'], '„O starości" — parafraza'],
+  ['a132', 'Zwycięstwo, które nie kosztuje krwi, nie kosztuje też nienawiści.', '', 'zh', 'sun-tzu', ['wojna', 'madrosc'], '„Sztuka wojny" — parafraza', 1],
+  ['a133', 'Wojna jest ojcem wszystkiego i królem wszystkiego: jednych czyni bogami, drugich ludźmi, jednych niewolnikami, drugich wolnymi.', 'πόλεμος πάντων μὲν πατήρ ἐστι', 'grc', 'heraklit', ['wojna', 'zmiana'], 'fragment B53'],
+  ['a134', 'W pokoju synowie grzebią ojców — i to jest jedyna miara, jakiej potrzeba.', '', 'grc', 'herodot', ['wojna', 'smierc'], '„Dzieje" I, 87 — myśl streszczająca'],
+  ['a135', 'Kto ma przyjaciela, ma skarb — kto nie ma, jest ubogi mimo złota.', '', 'grc', 'epikur', ['przyjazn', 'pieniadze'], 'Sentencje główne 27 — parafraza'],
 ]
