@@ -1,5 +1,7 @@
 ext {
-    minSdkVersion = 23
+    // 24 (Android 7), nie 23: Tailwind v4 wymaga Chrome 111+, a na Androidzie 6
+    // WebView zatrzymał się na Chrome 106 — style nie wchodzą tam wcale.
+    minSdkVersion = 24
     compileSdkVersion = 35
     targetSdkVersion = 35
     androidxActivityVersion = '1.9.2'
