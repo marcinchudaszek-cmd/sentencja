@@ -129,7 +129,7 @@ export default function App() {
         <main
           id="scroll-root"
           tabIndex={-1}
-          className="relative min-h-dvh w-full min-w-0 flex-1 pb-[calc(5.6rem+env(safe-area-inset-bottom))] outline-none md:pb-12"
+          className="relative min-h-dvh w-full min-w-0 flex-1 pb-[calc(5.6rem+var(--sa-bottom))] outline-none md:pb-12"
         >
           {/* Klucz na ścieżce wymusza przemontowanie, więc każdy ekran wchodzi z animacją.
               Świadomie bez AnimatePresence — tryb „wait" wstrzymywał montowanie nowej trasy. */}
@@ -211,7 +211,7 @@ function DesktopRail() {
 
 function MobileNav() {
   return (
-    <nav className="fixed inset-x-0 bottom-0 z-40 px-3 pb-[max(0.65rem,env(safe-area-inset-bottom))] md:hidden">
+    <nav className="fixed inset-x-0 bottom-0 z-40 px-3 pb-[max(0.65rem,var(--sa-bottom))] md:hidden">
       {/* wygaszenie treści przewijanej pod paskiem */}
       <div className="nav-scrim pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-[7.5rem]" aria-hidden />
       <div className="nav-surface mx-auto flex max-w-md items-center justify-around rounded-[1.6rem] px-1.5 py-1.5 shadow-[var(--shadow)]">

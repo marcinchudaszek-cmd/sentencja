@@ -372,7 +372,7 @@ function CollectionPicker({
         initial={{ y: 40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ type: 'spring', stiffness: 380, damping: 34 }}
-        className="glass-strong relative w-full max-w-md rounded-t-[1.8rem] p-5 pb-[max(1.25rem,env(safe-area-inset-bottom))] outline-none md:rounded-[1.8rem]"
+        className="glass-strong relative w-full max-w-md rounded-t-[1.8rem] p-5 pb-[max(1.25rem,var(--sa-bottom))] outline-none md:rounded-[1.8rem]"
       >
         <div className="mx-auto mb-4 h-1 w-10 rounded-full bg-[var(--border-strong)] md:hidden" />
         <h2 id="tytul-kolekcji" className="mb-3 text-[15px] font-medium">
