@@ -1,4 +1,4 @@
-package pl.sentencja.app;
+package com.beagleappsstudio.sentencja;
 
 import com.getcapacitor.BridgeActivity;
 

@@ -1,4 +1,4 @@
-package pl.sentencja.app;
+package com.beagleappsstudio.sentencja;
 
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;

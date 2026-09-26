@@ -10,10 +10,10 @@ if (hasKeystore) {
 }
 
 android {
-    namespace "pl.sentencja.app"
+    namespace "com.beagleappsstudio.sentencja"
     compileSdk rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "pl.sentencja.app"
+        applicationId "com.beagleappsstudio.sentencja"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 2
