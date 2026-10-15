@@ -141,4 +141,12 @@ export const QUOTES_ANTYK: QuoteTuple[] = [
   ['a133', 'Wojna jest ojcem wszystkiego i królem wszystkiego: jednych czyni bogami, drugich ludźmi, jednych niewolnikami, drugich wolnymi.', 'πόλεμος πάντων μὲν πατήρ ἐστι', 'grc', 'heraklit', ['wojna', 'zmiana'], 'fragment B53'],
   ['a134', 'W pokoju synowie grzebią ojców — i to jest jedyna miara, jakiej potrzeba.', '', 'grc', 'herodot', ['wojna', 'smierc'], '„Dzieje" I, 87 — myśl streszczająca'],
   ['a135', 'Kto ma przyjaciela, ma skarb — kto nie ma, jest ubogi mimo złota.', '', 'grc', 'epikur', ['przyjazn', 'pieniadze'], 'Sentencje główne 27 — parafraza'],
+  // ——— Rozszerzenie: Homer, historycy, przyjaźń ———
+  ['a136', 'Jakie są pokolenia liści, takie są i pokolenia ludzi.', 'οἵη περ φύλλων γενεὴ τοίη δὲ καὶ ἀνδρῶν', 'grc', 'homer', ['czas', 'smierc'], '„Iliada" VI, 146'],
+  ['a137', 'Wolałbym jako parobek służyć na roli u ubogiego człowieka, niż panować nad wszystkimi umarłymi.', '', 'grc', 'homer', ['zycie', 'smierc'], '„Odyseja" XI — słowa cienia Achillesa'],
+  ['a138', 'Któż wie, czy życie nie jest umieraniem, a umieranie — życiem?', '', 'grc', 'eurypides', ['smierc', 'zycie'], 'fragment „Poliidosa", przytoczony przez Platona w „Gorgiaszu"'],
+  ['a139', 'Dla sławnych mężów grobem jest cała ziemia.', 'ἀνδρῶν γὰρ ἐπιφανῶν πᾶσα γῆ τάφος', 'grc', 'tukidydes', ['smierc', 'odwaga'], 'mowa pogrzebowa Peryklesa, „Wojna peloponeska" II, 43'],
+  ['a140', 'Ilu ludzi, tyle zdań.', 'Quot homines, tot sententiae', 'la', 'terencjusz', ['czlowiek', 'prawda'], '„Formion", 454'],
+  ['a141', 'Póki będziesz szczęśliwy, będziesz liczył wielu przyjaciół; gdy nadejdą pochmurne czasy, zostaniesz sam.', 'Donec eris felix, multos numerabis amicos; tempora si fuerint nubila, solus eris', 'la', 'owidiusz', ['przyjazn', 'samotnosc'], '„Żale" I, 9'],
+  ['a142', 'Najlepszy czas na posadzenie drzewa był dwadzieścia lat temu. Drugi najlepszy jest teraz.', '', '', 'konfucjanska-mysl', ['czas', 'zmiana'], '„przysłowie chińskie" znane dopiero z XX-wiecznych źródeł zachodnich; chińskiego pierwowzoru nie odnaleziono', 1],
 ]

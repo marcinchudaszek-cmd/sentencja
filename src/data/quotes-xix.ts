@@ -217,5 +217,14 @@ export const QUOTES_XIX: QuoteTuple[] = [
   ['c202', 'Chłop potęgą jest i basta.', '', 'pl', 'wyspianski', ['wladza', 'humor'], '„Wesele", 1901'],
   ['c203', 'Czy sobie przeczę? Bardzo dobrze, więc sobie przeczę. Jestem ogromny, mieszczę w sobie mnogość.', 'Do I contradict myself? Very well then I contradict myself, (I am large, I contain multitudes.)', 'en', 'whitman', ['czlowiek', 'wolnosc'], '„Pieśń o sobie", 51, „Źdźbła trawy"'],
   ['c204', 'Wierzę, że źdźbło trawy jest nie mniejsze niż dzieło gwiazd.', 'I believe a leaf of grass is no less than the journey-work of the stars', 'en', 'whitman', ['natura', 'wiara'], '„Pieśń o sobie", 31, „Źdźbła trawy"'],
-  ['c205', 'Nadzieja to coś z piórami, co przysiada w duszy i śpiewa melodię bez słów — i nigdy nie milknie.', 'Hope is the thing with feathers that perches in the soul', 'en', 'dickinson', ['nadzieja'], 'wiersz 254, ok. 1861'],
+  // ——— Rozszerzenie: Keats, Puszkin, Heine, Asnyk ———
+  ['c205', 'Rzecz piękna jest radością na zawsze.', 'A thing of beauty is a joy for ever', 'en', 'keats', ['sztuka', 'szczescie'], '„Endymion", 1818'],
+  ['c206', 'Piękno jest prawdą, prawda pięknem — oto wszystko, co wiecie na ziemi, i wszystko, co wiedzieć trzeba.', 'Beauty is truth, truth beauty, — that is all ye know on earth, and all ye need to know', 'en', 'keats', ['sztuka', 'prawda'], '„Oda do urny greckiej", 1819'],
+  ['c207', 'Przyzwyczajenie dane nam z niebios: ono zastępuje szczęście.', 'Привычка свыше нам дана: замена счастию она', 'ru', 'puszkin', ['szczescie', 'czlowiek'], '„Eugeniusz Oniegin" II, 31'],
+  ['c208', 'Tam, gdzie pali się książki, w końcu pali się także ludzi.', 'Dort, wo man Bücher verbrennt, verbrennt man auch am Ende Menschen', 'de', 'heine', ['wolnosc', 'wojna'], '„Almansor", 1821'],
+  ['c209', 'Daremne żale, próżny trud, bezsilne złorzeczenia! Przeżytych kształtów żaden cud nie wróci do istnienia.', '', 'pl', 'asnyk', ['czas', 'zmiana'], '„Daremne żale"'],
+  ['c210', 'Trzeba z żywymi naprzód iść, po życie sięgać nowe, a nie w uwiędłych laurów liść z uporem stroić głowę.', '', 'pl', 'asnyk', ['zmiana', 'zycie'], '„Daremne żale"'],
+  ['c211', 'Prawdziwe raje to raje, które utraciliśmy.', 'Les vrais paradis sont les paradis qu\'on a perdus', 'fr', 'proust', ['czas', 'szczescie'], '„Czas odnaleziony", 1927'],
+  ['c212', 'Jeśli płaczesz, bo zaszło słońce, łzy nie pozwolą ci zobaczyć gwiazd.', 'If you shed tears when you miss the sun, you also miss the stars', 'en', 'tagore', ['nadzieja', 'cierpienie'], '„Zabłąkane ptaki", 1916'],
+  ['c213', 'Być zwyciężonym i nie ulec — to zwycięstwo; zwyciężyć i spocząć na laurach — to klęska.', '', 'pl', 'pilsudski', ['odwaga', 'sukces'], 'przypisywane; powszechnie cytowane bez wskazania źródła', 1],
 ]
