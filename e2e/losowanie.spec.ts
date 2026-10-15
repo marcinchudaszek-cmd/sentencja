@@ -29,7 +29,9 @@ test.describe('losowanie', () => {
   test('filtr zawęża pulę i jest widoczny po zwinięciu panelu', async ({ page }) => {
     await page.goto('/#/losuj')
     const stopka = page.locator('main p').filter({ hasText: 'Losowanie z' })
-    await expect(stopka).toContainText('511')
+    // Bez liczby na sztywno — baza rośnie z każdą partią cytatów.
+    await expect(stopka).toContainText(/Losowanie z d+ cytatów/)
+    const pelnaPula = (await stopka.textContent())!.trim()
 
     await page.getByRole('button', { name: 'Filtry', exact: true }).click()
     await page.getByRole('button', { name: '🃏 Humor' }).click()
@@ -43,7 +45,7 @@ test.describe('losowanie', () => {
     await expect(aktywne).toContainText('Humor')
 
     await aktywne.getByRole('button', { name: 'wyczyść wszystkie' }).click()
-    await expect(stopka).toContainText('511')
+    await expect(stopka).toHaveText(pelnaPula)
   })
 
   test('klawisz R losuje kolejny cytat', async ({ page }) => {
