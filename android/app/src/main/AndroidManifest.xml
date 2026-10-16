@@ -61,10 +61,10 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
-    <!-- Codzienne powiadomienie z cytatem dnia -->
+    <!-- Codzienne powiadomienie z cytatem dnia. Celowo bez SCHEDULE_EXACT_ALARM
+         i USE_EXACT_ALARM: Google Play dopuszcza je tylko w budzikach i kalendarzach,
+         a wtyczka bez nich planuje alarm niedokładny (setAndAllowWhileIdle). -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
-    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <!-- Wibracja przy interakcjach -->

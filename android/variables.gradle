@@ -2,8 +2,10 @@ ext {
     // 24 (Android 7), nie 23: Tailwind v4 wymaga Chrome 111+, a na Androidzie 6
     // WebView zatrzymał się na Chrome 106 — style nie wchodzą tam wcale.
     minSdkVersion = 24
-    compileSdkVersion = 35
-    targetSdkVersion = 35
+    // 36: od 31.08.2026 Google Play przyjmuje nowe aplikacje i aktualizacje
+    // tylko z targetSdk 36 (Android 16) lub wyższym.
+    compileSdkVersion = 36
+    targetSdkVersion = 36
     androidxActivityVersion = '1.9.2'
     androidxAppCompatVersion = '1.7.0'
     androidxCoordinatorLayoutVersion = '1.2.0'
