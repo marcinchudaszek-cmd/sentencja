@@ -304,6 +304,7 @@ const LANG_NAMES: Record<string, string> = {
   pt: 'portugalski',
   ja: 'japoński',
   cs: 'czeski',
+  nl: 'niderlandzki',
 }
 
 function ActionButton({

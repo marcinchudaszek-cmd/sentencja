@@ -165,4 +165,9 @@ export const QUOTES_ANTYK: QuoteTuple[] = [
   ['a153', 'Wszystko jest pełne bogów.', 'Πάντα πλήρη θεῶν', 'grc', 'tales', ['wiara', 'natura'], 'wg Arystotelesa, „O duszy" I, 5'],
   ['a154', 'Jesteśmy prochem i cieniem.', 'Pulvis et umbra sumus', 'la', 'horacy', ['smierc', 'czas'], '„Pieśni" IV, 7'],
   ['a155', 'Zwycięskie wojska najpierw zwyciężają, a potem idą do bitwy; pokonane najpierw idą do bitwy, a potem szukają zwycięstwa.', '', 'zh', 'sun-tzu', ['sukces', 'wojna'], '„Sztuka wojny" IV'],
+  // ——— Rozszerzenie: przyjaźń i samotność ———
+  ['a156', 'Przyjaciel to drugie ja.', '', 'grc', 'arystoteles', ['przyjazn'], '„Etyka nikomachejska" IX, 9'],
+  ['a157', 'Wycofaj się w siebie, jak tylko możesz; obcuj z tymi, którzy cię uczynią lepszym.', 'Recede in te ipse quantum potes; cum his versare qui te meliorem facturi sunt', 'la', 'seneka', ['samotnosc', 'przyjazn'], '„Listy moralne do Lucyliusza" 7'],
+  ['a158', 'Przyjaźń sprawia, że szczęście staje się jaśniejsze, a nieszczęście — dzielone i współodczuwane — lżejsze.', 'Secundas res splendidiores facit amicitia et adversas partiens communicansque leviores', 'la', 'cyceron', ['przyjazn', 'szczescie'], '„O przyjaźni" 22'],
+  ['a159', 'Czyż nie jest radością, gdy przyjaciel przybywa z daleka?', '有朋自遠方來，不亦樂乎', 'zh', 'konfucjusz', ['przyjazn', 'szczescie'], '„Dialogi konfucjańskie" I, 1'],
 ]

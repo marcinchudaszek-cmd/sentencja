@@ -9,7 +9,7 @@ export type EraId =
 
 export type Lang =
   | 'en' | 'la' | 'grc' | 'de' | 'fr' | 'it' | 'es' | 'ru' | 'pl'
-  | 'ar' | 'fa' | 'zh' | 'sa' | 'pt' | 'ja' | 'cs'
+  | 'ar' | 'fa' | 'zh' | 'sa' | 'pt' | 'ja' | 'cs' | 'nl'
 
 export interface Era {
   id: EraId

@@ -250,4 +250,10 @@ export const QUOTES_XIX: QuoteTuple[] = [
   ['c231', 'Dążyć, szukać, znajdować i nie ustępować.', 'To strive, to seek, to find, and not to yield', 'en', 'tennyson', ['odwaga', 'sukces'], '„Ulisses", 1842'],
   ['c232', 'Podróżować z nadzieją to rzecz lepsza niż dotrzeć do celu.', 'To travel hopefully is a better thing than to arrive', 'en', 'stevenson', ['nadzieja', 'sukces'], 'esej „El Dorado", 1881'],
   ['c233', 'I słodko mi jest rozbić się w tym morzu.', 'E il naufragar m\'è dolce in questo mare', 'it', 'leopardi', ['samotnosc', 'natura'], '„Nieskończoność", 1819'],
+  // ——— Rozszerzenie: samotność i przyjaźń ———
+  ['c234', 'Kochać drugą osobę to ujrzeć oblicze Boga.', 'Aimer une autre personne, c\'est voir la face de Dieu', 'fr', 'hugo', ['milosc', 'wiara'], '„Nędznicy", 1862'],
+  ['c235', 'Jestem nikim! A ty kim jesteś? Czy ty też jesteś nikim?', 'I\'m Nobody! Who are you? Are you – Nobody – too?', 'en', 'dickinson', ['samotnosc', 'humor'], 'wiersz 260, ok. 1861'],
+  ['c236', 'Kto teraz nie ma domu, już go nie zbuduje. Kto teraz jest sam, ten długo sam zostanie.', 'Wer jetzt kein Haus hat, baut sich keines mehr. Wer jetzt allein ist, wird es lange bleiben', 'de', 'rilke', ['samotnosc', 'czas'], '„Dzień jesienny", 1902'],
+  ['c237', 'Razem, młodzi przyjaciele! W szczęściu wszystkiego są wszystkich cele.', '', 'pl', 'mickiewicz', ['przyjazn', 'nadzieja'], '„Oda do młodości", 1820'],
+  ['c238', 'Dom podzielony przeciw sobie nie może się ostać.', 'A house divided against itself cannot stand', 'en', 'lincoln', ['wladza', 'wojna'], 'przemówienie w Springfield, 1858 — za Ewangelią'],
 ]
