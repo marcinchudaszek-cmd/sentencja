@@ -327,4 +327,13 @@ export const QUOTES_XX: QuoteTuple[] = [
   ['d306', 'Jeśli nie masz czasu czytać, nie masz też czasu — ani narzędzi — by pisać.', 'If you don\'t have time to read, you don\'t have the time (or the tools) to write', 'en', 'stephen-king', ['slowo', 'praca'], '„Jak pisać. Pamiętnik rzemieślnika", 2000'],
   ['d307', 'Droga do piekła wybrukowana jest przysłówkami.', 'The road to hell is paved with adverbs', 'en', 'stephen-king', ['slowo', 'humor'], '„Jak pisać. Pamiętnik rzemieślnika", 2000'],
   ['d308', 'Podmiot osiągnięć wyzyskuje sam siebie, aż się wypali.', '', 'de', 'han', ['praca', 'czlowiek'], '„Społeczeństwo zmęczenia", 2010'],
+  // ——— Rozszerzenie: samotność, wojna, pieniądze ———
+  ['d309', 'Faceci tacy jak my, którzy pracują na ranczach, są najbardziej samotnymi ludźmi na świecie.', 'Guys like us, that work on ranches, are the loneliest guys in the world', 'en', 'steinbeck', ['samotnosc', 'praca'], '„Myszy i ludzie", 1937'],
+  ['d310', 'I tak płyniemy dalej, łodzie pod prąd, nieustannie znoszone w przeszłość.', 'So we beat on, boats against the current, borne back ceaselessly into the past', 'en', 'fitzgerald', ['czas'], '„Wielki Gatsby", ostatnie zdanie, 1925'],
+  ['d311', 'Pozwól, że opowiem ci o bardzo bogatych. Są inni niż ty i ja.', 'Let me tell you about the very rich. They are different from you and me', 'en', 'fitzgerald', ['pieniadze', 'czlowiek'], 'opowiadanie „Bogaty chłopiec", 1926'],
+  ['d312', 'Po każdej wojnie ktoś musi posprzątać.', '', 'pl', 'szymborska', ['wojna'], '„Koniec i początek", 1993'],
+  ['d313', 'Pan Bóg chce zgasić świeczkę, a ja muszę szybko osłonić płomień, korzystając z Jego chwilowej nieuwagi.', '', 'pl', 'marek-edelman', ['smierc', 'odwaga'], 'w rozmowie z Hanną Krall, „Zdążyć przed Panem Bogiem", 1977'],
+  ['d314', 'Jeśli widzisz oszustwo i nie mówisz „oszustwo", sam jesteś oszustem.', 'If you see fraud and do not say fraud, you are a fraud', 'en', 'taleb', ['prawda', 'odwaga'], '„Skóra w grze", 2018'],
+  ['d315', 'Spróbuj opiewać okaleczony świat.', '', 'pl', 'zagajewski', ['nadzieja', 'sztuka'], 'wiersz „Spróbuj opiewać okaleczony świat", 2001'],
+  ['d316', 'Ziemia, nasz dom, zdaje się coraz bardziej przemieniać w ogromne składowisko śmieci.', '', 'it', 'papiez-franciszek', ['natura'], 'encyklika „Laudato si\'", 21, 2015'],
 ]

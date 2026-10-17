@@ -154,4 +154,11 @@ export const QUOTES_ANTYK: QuoteTuple[] = [
   ['a144', 'Spośród wszystkiego, co mądrość przygotowuje dla szczęścia całego życia, największym dobrem jest przyjaźń.', '', 'grc', 'epikur', ['przyjazn', 'szczescie'], '„Główne myśli" 27'],
   ['a145', 'Tworzą pustynię i nazywają to pokojem.', 'Ubi solitudinem faciunt, pacem appellant', 'la', 'tacyt', ['wojna', 'wladza'], '„Agrykola" 30 — mowa wodza Kalgakusa o Rzymianach'],
   ['a146', 'Kto pragnie pokoju, niech przygotowuje się do wojny.', 'Igitur qui desiderat pacem, praeparet bellum', 'la', 'wegecjusz', ['wojna'], '„Zarys sztuki wojennej" III, wstęp — stąd późniejsze „Si vis pacem, para bellum"'],
+  // ——— Rozszerzenie: przyjaźń i pieniądze ———
+  ['a147', 'Bez przyjaciół nikt nie chciałby żyć, choćby posiadał wszystkie inne dobra.', '', 'grc', 'arystoteles', ['przyjazn'], '„Etyka nikomachejska" VIII, 1'],
+  ['a148', 'Nie potrzebuję przyjaciela, który zmienia się, gdy ja się zmieniam, i kiwa głową, gdy ja kiwam — mój cień robi to o wiele lepiej.', '', 'grc', 'plutarch', ['przyjazn', 'prawda'], '„Jak odróżnić pochlebcę od przyjaciela"'],
+  ['a149', 'Pieniądz jeden rządzi wszystkimi rzeczami.', 'Pecunia una regimen est rerum omnium', 'la', 'publiliusz', ['pieniadze', 'wladza'], '„Sentencje"'],
+  ['a150', 'Pomagać — albo przynajmniej nie szkodzić.', '', 'grc', 'hipokrates', ['madrosc', 'wiedza'], '„Epidemie" I, 11 — stąd późniejsze „Primum non nocere"'],
+  ['a151', 'Jak wiele jest rzeczy, których nie potrzebuję!', '', 'grc', 'sokrates', ['pieniadze', 'szczescie'], 'na widok towarów na targu, wg Diogenesa Laertiosa II, 25'],
+  ['a152', 'Kto wie, że ma dość, jest bogaty.', '知足者富', 'zh', 'laozi', ['pieniadze', 'szczescie'], '„Tao te king" 33'],
 ]

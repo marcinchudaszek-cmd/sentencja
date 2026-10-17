@@ -26,7 +26,7 @@ export const QUOTES_XIX: QuoteTuple[] = [
   ['c022', 'Piękno na to jest, by zachwycało do pracy — praca, by się zmartwychwstało.', '', 'pl', 'norwid', ['sztuka', 'praca'], '„Promethidion"'],
   ['c023', 'Aby mierzyć drogę przyszłą, trzeba wiedzieć, skąd się wyszło.', '', 'pl', 'norwid', ['czas', 'madrosc'], '„Rzecz o wolności słowa"'],
   ['c024', 'Nie ma nic bardziej złudnego niż oczywisty fakt.', '', 'fr', 'balzac', ['prawda'], 'przypisywane, także Conan Doyle\'owi', 1],
-  ['c025', 'Za każdą wielką fortuną kryje się zbrodnia.', '', 'fr', 'balzac', ['pieniadze', 'wladza'], '„Ojciec Goriot" — parafraza'],
+  ['c025', 'Za każdą wielką fortuną kryje się zbrodnia.', 'Le secret des grandes fortunes sans cause apparente est un crime oublié, parce qu\'il a été proprement fait', 'fr', 'balzac', ['pieniadze', 'wladza'], '„Ojciec Goriot", 1835 — popularna parafraza; u Balzaka: tajemnicą wielkich fortun bez widocznego źródła jest zapomniana zbrodnia, zapomniana, bo popełniona porządnie'],
   ['c026', 'Nic nie jest potężniejsze od idei, której czas nadszedł.', 'On résiste à l\'invasion des armées; on ne résiste pas à l\'invasion des idées', 'fr', 'hugo', ['zmiana', 'wolnosc'], '„Historia zbrodni"'],
   ['c027', 'Ten, kto codziennie otwiera szkołę, zamyka więzienie.', '', 'fr', 'hugo', ['wiedza', 'wladza'], 'przypisywane', 1],
   ['c028', 'Muzyka wyraża to, czego nie da się powiedzieć i o czym nie sposób milczeć.', 'La musique exprime ce qui ne peut être dit et sur quoi il est impossible de rester silencieux', 'fr', 'hugo', ['sztuka', 'slowo'], '„William Shakespeare"'],
@@ -235,4 +235,12 @@ export const QUOTES_XIX: QuoteTuple[] = [
   ['c218', 'Na każdym spacerze z naturą otrzymuje się o wiele więcej, niż się szuka.', 'In every walk with nature one receives far more than he seeks', 'en', 'muir', ['natura'], '„Steep Trails", 1918'],
   ['c219', 'Wzniosłem sobie pomnik nie ręką uczyniony.', 'Я памятник себе воздвиг нерукотворный', 'ru', 'puszkin', ['sztuka', 'smierc'], 'wiersz „Pomnik", 1836'],
   ['c220', 'Gdy w nocy myślę o Niemczech, sen mnie opuszcza.', 'Denk ich an Deutschland in der Nacht, dann bin ich um den Schlaf gebracht', 'de', 'heine', ['samotnosc', 'cierpienie'], '„Myśli nocne", 1844'],
+  // ——— Rozszerzenie: pieniądze, natura, samotność ———
+  ['c221', 'Najbogatszy jest ten, czyje przyjemności są najtańsze.', 'That man is the richest whose pleasures are the cheapest', 'en', 'thoreau', ['pieniadze', 'szczescie'], 'dziennik, 1856'],
+  ['c222', 'Natura zawsze nosi barwy ducha.', 'Nature always wears the colors of the spirit', 'en', 'emerson', ['natura'], '„Natura", 1836'],
+  ['c223', 'Roczny dochód dwadzieścia funtów, roczne wydatki dziewiętnaście funtów, dziewiętnaście szylingów i sześć pensów — wynik: szczęście. Roczny dochód dwadzieścia funtów, wydatki dwadzieścia funtów i sześć pensów — wynik: nędza.', 'Annual income twenty pounds, annual expenditure nineteen nineteen and six, result happiness. Annual income twenty pounds, annual expenditure twenty pounds ought and six, result misery', 'en', 'dickens', ['pieniadze', 'humor'], '„David Copperfield", 1850 — rada pana Micawbera'],
+  ['c224', 'Pieniądz to wybita wolność.', 'Деньги есть чеканенная свобода', 'ru', 'dostojewski', ['pieniadze', 'wolnosc'], '„Wspomnienia z domu umarłych", 1862'],
+  ['c225', 'Nie ma wielkości tam, gdzie nie ma prostoty, dobroci i prawdy.', '', 'ru', 'tolstoj', ['prawda', 'wladza'], '„Wojna i pokój" — o Napoleonie'],
+  ['c226', 'Jest rozkosz w bezdrożnych lasach, jest zachwyt na samotnym brzegu, jest towarzystwo tam, gdzie nikt się nie wdziera — nad głębokim morzem i w muzyce jego szumu.', 'There is a pleasure in the pathless woods, there is a rapture on the lonely shore, there is society where none intrudes, by the deep Sea, and music in its roar', 'en', 'byron', ['natura', 'samotnosc'], '„Wędrówki Childe Harolda" IV, 178'],
+  ['c227', 'Polska Winkelriedem narodów!', '', 'pl', 'slowacki', ['odwaga', 'wojna'], '„Kordian", akt III — monolog na Mont Blanc, 1834'],
 ]

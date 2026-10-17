@@ -246,4 +246,15 @@ export const QUOTES_KLASYKA: QuoteTuple[] = [
   ['b226', 'Stary staw — żaba wskakuje — plusk wody.', '古池や蛙飛び込む水の音', 'ja', 'basho', ['natura'], 'haiku, 1686'],
   ['b227', 'Letnia trawa — wszystko, co zostało ze snów wojowników.', '夏草や兵どもが夢の跡', 'ja', 'basho', ['wojna', 'czas'], '„Ścieżki północy", Hiraizumi, 1689'],
   ['b228', 'Zobaczyć świat w ziarnku piasku i niebo w polnym kwiecie, zamknąć nieskończoność w dłoni, a wieczność w godzinie.', 'To see a World in a Grain of Sand and a Heaven in a Wild Flower, hold Infinity in the palm of your hand and Eternity in an hour', 'en', 'blake', ['natura', 'czas'], '„Wróżby niewinności", ok. 1803'],
+  // ——— Rozszerzenie: Hus, Gracián, przyjaźń i pieniądze ———
+  ['b229', 'Szukaj prawdy, słuchaj prawdy, ucz się prawdy, kochaj prawdę, mów prawdę, trzymaj się prawdy i broń prawdy aż do śmierci.', 'Hledej pravdu, slyš pravdu, uč se pravdě, miluj pravdu, mluv pravdu, drž pravdu, braň pravdu až do smrti', 'cs', 'hus', ['prawda', 'odwaga'], '„Wykład wiary", 1412'],
+  ['b230', 'Jakże szybko przemija chwała świata!', 'O quam cito transit gloria mundi!', 'la', 'tomasz-a-kempis', ['czas', 'sukces'], '„O naśladowaniu Chrystusa" I, 3'],
+  ['b231', 'Nie pożyczaj ani nie bierz pożyczek — bo pożyczka często traci i siebie, i przyjaciela.', 'Neither a borrower nor a lender be; for loan oft loses both itself and friend', 'en', 'szekspir', ['pieniadze', 'przyjazn'], '„Hamlet", akt I — rada Poloniusza'],
+  ['b232', 'Powiedz mi, z kim przestajesz, a powiem ci, kim jesteś.', 'Dime con quién andas, decirte he quién eres', 'es', 'cervantes', ['przyjazn', 'czlowiek'], '„Don Kichot", cz. II — przysłowie w ustach Sancza'],
+  ['b233', 'Co dobre, a krótkie — dwakroć dobre.', 'Lo bueno, si breve, dos veces bueno', 'es', 'gracian', ['slowo', 'madrosc'], '„Wyrocznia podręczna", 105, 1647'],
+  ['b234', 'Mieć przyjaciół to drugie istnienie.', 'Tener amigos es segundo ser', 'es', 'gracian', ['przyjazn'], '„Wyrocznia podręczna", 111, 1647'],
+  ['b235', 'Strzeż się drobnych wydatków: mały przeciek zatopi wielki okręt.', 'Beware of little expenses; a small leak will sink a great ship', 'en', 'franklin', ['pieniadze'], '„Droga do bogactwa", 1758'],
+  ['b236', 'Przyjaźń trzeba stale utrzymywać w dobrym stanie.', 'A man should keep his friendship in constant repair', 'en', 'samuel-johnson', ['przyjazn'], 'w relacji Jamesa Boswella, 1755'],
+  ['b237', 'Bardziej haniebne jest nie ufać przyjaciołom, niż dać się przez nich oszukać.', 'Il est plus honteux de se défier de ses amis que d\'en être trompé', 'fr', 'la-rochefoucauld', ['przyjazn', 'prawda'], '„Maksymy", 84'],
+  ['b238', 'Droga nadmiaru prowadzi do pałacu mądrości.', 'The road of excess leads to the palace of wisdom', 'en', 'blake', ['madrosc', 'zycie'], '„Zaślubiny Nieba i Piekła", 1790'],
 ]

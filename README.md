@@ -7,9 +7,9 @@ aplikacja webowa (PWA) i natywna aplikacja na Androida — ten sam kod, pełne d
 
 ## Co jest w środku
 
-- **902 cytaty** — każdy po polsku, z oryginałem (łacina, greka, angielski, niemiecki, francuski,
+- **933 cytaty** — każdy po polsku, z oryginałem (łacina, greka, angielski, niemiecki, francuski,
   chiński, perski, japoński i inne), autorem i źródłem.
-- **333 autorów** z 45 krajów, z biogramami na dwa–trzy zdania i latami życia — od Safony i Homera
+- **339 autorów** z 45 krajów, z biogramami na dwa–trzy zdania i latami życia — od Safony i Homera
   po współczesność.
 - **26 tematów** (miłość, czas, władza, cierpienie, humor…) i **7 epok**.
 - 131 cytatów o niepewnym pochodzeniu są **wyraźnie oznaczone** jako sporne — każdy z notatką,
@@ -23,7 +23,7 @@ aplikacja webowa (PWA) i natywna aplikacja na Androida — ten sam kod, pełne d
 | **Start** | Cytat dnia (ten sam dla wszystkich, deterministyczny z daty), losowy strzał, skróty do tematów i epok |
 | **Odkrywaj** | Trzy przekroje bazy: tematy, autorzy (z wyszukiwarką, filtrem epoki i trzema sortowaniami), epoki |
 | **Losuj** | Jeden przypadkowy cytat na pełnym ekranie; pula zawężana tematem, epoką lub ulubionymi. Kolejny wywołuje przycisk, spacja na klawiaturze albo potrząśnięcie telefonem. Losowanie nie powtarza autora pod rząd |
-| **Oś czasu** | 330 autorów na nieliniowej skali 26 wieków, siatka gęstości tematów w epokach, rozkład geograficzny |
+| **Oś czasu** | 336 autorów na nieliniowej skali 26 wieków, siatka gęstości tematów w epokach, rozkład geograficzny |
 | **Talia** | Karty do przesuwania — w prawo do ulubionych, w lewo dalej |
 | **Szukaj** | Wyszukiwanie pełnotekstowe po treści, oryginale, autorze, temacie i źródle; odporne na polskie znaki (`wolnosc` znajdzie `wolność`). Fraza w cudzysłowie szuka dosłownie, wyniki filtrują się po epoce i temacie, historia zapytań zostaje na później |
 | **Zbiory** | Ulubione, własne kolekcje z emoji i notatki do cytatów |

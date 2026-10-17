@@ -1,6 +1,6 @@
 # Sentencja — teksty i odpowiedzi do Google Play Console
 
-Wersja 1.0.4 (kod 5) · pakiet `com.beagleappsstudio.sentencja` · plik `wydanie/Sentencja-1.0.4-5-play.aab`
+Wersja 1.0.5 (kod 6) · pakiet `com.beagleappsstudio.sentencja` · plik `wydanie/Sentencja-1.0.5-6-play.aab`
 Język domyślny strony w sklepie: **polski (pl-PL)**. Aplikacja ma interfejs tylko po polsku, więc
 angielskiego opisu celowo nie ma — obcojęzyczni użytkownicy dostaliby aplikację, której nie przeczytają.
 
@@ -17,7 +17,7 @@ Sentencja – słynne cytaty
 ### Krótki opis (maks. 80 znaków)
 
 ```
-902 cytaty z oryginałami, biogramy 333 autorów, cytat dnia. Działa offline.
+933 cytaty z oryginałami, biogramy 339 autorów, cytat dnia. Działa offline.
 ```
 
 ### Pełny opis (maks. 4000 znaków)
@@ -26,8 +26,8 @@ Sentencja – słynne cytaty
 Sentencja to kolekcja słynnych cytatów ułożona tak, żeby dało się ją czytać, a nie tylko przewijać. Każda myśl ma polskie brzmienie, oryginał w języku autora, źródło i kontekst — od Safony i Homera po współczesność.
 
 CO JEST W ŚRODKU
-• 902 cytaty — z oryginałami po łacinie, grecku, angielsku, niemiecku, francusku, rosyjsku, chińsku, persku, japońsku i w innych językach
-• 333 autorów z 45 krajów, każdy z krótkim biogramem i latami życia
+• 933 cytaty — z oryginałami po łacinie, grecku, angielsku, niemiecku, francusku, rosyjsku, chińsku, persku, japońsku i w innych językach
+• 339 autorów z 45 krajów, każdy z krótkim biogramem i latami życia
 • 26 tematów: miłość, czas, wolność, władza, przyjaźń, śmierć, humor i inne
 • 7 epok: od antyku, przez średniowiecze, renesans i oświecenie, po XIX i XX wiek oraz współczesność
 • Uczciwe źródła: cytaty o niepewnym pochodzeniu są wyraźnie oznaczone i wyjaśnione — wiesz, które słowa Einsteina są naprawdę Einsteina. Sporne cytaty możesz ukryć jednym przełącznikiem
@@ -134,12 +134,12 @@ Na kontach osobistych założonych po 13.11.2023 **każda nowa aplikacja** musi 
 **test zamknięty: min. 12 testerów przez 14 dni**, zanim dostanie dostęp do produkcji — także wtedy,
 gdy inne aplikacje na tym koncie już go zaliczyły.
 
-**Nazwa wydania:** `1.0.4`
+**Nazwa wydania:** `1.0.5`
 
 **Informacje o wersji (pl-PL, maks. 500 znaków):**
 ```
 <pl-PL>
-Pierwsze wydanie Sentencji: 902 słynne cytaty z oryginałami, 333 autorów z biogramami, 26 tematów i 7 epok. Cytat dnia z przypomnieniem i widżetem, losowanie, talia kart, oś czasu, wyszukiwarka, własne kolekcje z notatkami i studio grafik z cytatami. Działa w pełni offline.
+Pierwsze wydanie Sentencji: 933 słynne cytaty z oryginałami, 339 autorów z biogramami, 26 tematów i 7 epok. Cytat dnia z przypomnieniem i widżetem, losowanie, talia kart, oś czasu, wyszukiwarka, własne kolekcje z notatkami i studio grafik z cytatami. Działa w pełni offline.
 </pl-PL>
 ```
 
