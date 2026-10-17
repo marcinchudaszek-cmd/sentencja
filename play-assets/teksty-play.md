@@ -147,10 +147,9 @@ Pierwsze wydanie Sentencji: 902 słynne cytaty z oryginałami, 333 autorów z bi
 
 ## Do sprawdzenia przed wysyłką
 
-- [ ] Przycisk **Ustawienia → „Zapisz kopię danych (JSON)"** — na Androidzie pobieranie przez
-      link `download` w WebView zwykle nie działa. Sprawdzić na telefonie; jeśli nic się nie dzieje,
-      przerobić na zapis przez Filesystem + Udostępnij (jak w Studiu). W opisie sklepu tej funkcji
-      celowo nie ma.
+- [x] **Ustawienia → „Wyślij kopię danych (JSON)"** — od 1.0.4 zapis do pamięci podręcznej
+      i systemowe „Udostępnij" (wcześniej link `download` w WebView nic nie zapisywał).
+      Sprawdzone na emulatorze Android 16: otwiera się okno z plikiem `sentencja-kopia.json`.
 - [ ] Widżet z cytatem dnia — dodać na telefonie i sprawdzić, że pokazuje dzisiejszy cytat (jest w opisie).
 - [ ] Przypomnienie o cytacie dnia — włączyć i poczekać na powiadomienie (po usunięciu dokładnych
       alarmów może przyjść kilka minut po ustawionej godzinie).
