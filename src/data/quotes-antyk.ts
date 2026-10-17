@@ -161,4 +161,8 @@ export const QUOTES_ANTYK: QuoteTuple[] = [
   ['a150', 'Pomagać — albo przynajmniej nie szkodzić.', '', 'grc', 'hipokrates', ['madrosc', 'wiedza'], '„Epidemie" I, 11 — stąd późniejsze „Primum non nocere"'],
   ['a151', 'Jak wiele jest rzeczy, których nie potrzebuję!', '', 'grc', 'sokrates', ['pieniadze', 'szczescie'], 'na widok towarów na targu, wg Diogenesa Laertiosa II, 25'],
   ['a152', 'Kto wie, że ma dość, jest bogaty.', '知足者富', 'zh', 'laozi', ['pieniadze', 'szczescie'], '„Tao te king" 33'],
+  // ——— Rozszerzenie: śmierć, nadzieja, sukces ———
+  ['a153', 'Wszystko jest pełne bogów.', 'Πάντα πλήρη θεῶν', 'grc', 'tales', ['wiara', 'natura'], 'wg Arystotelesa, „O duszy" I, 5'],
+  ['a154', 'Jesteśmy prochem i cieniem.', 'Pulvis et umbra sumus', 'la', 'horacy', ['smierc', 'czas'], '„Pieśni" IV, 7'],
+  ['a155', 'Zwycięskie wojska najpierw zwyciężają, a potem idą do bitwy; pokonane najpierw idą do bitwy, a potem szukają zwycięstwa.', '', 'zh', 'sun-tzu', ['sukces', 'wojna'], '„Sztuka wojny" IV'],
 ]

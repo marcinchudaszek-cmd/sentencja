@@ -336,4 +336,18 @@ export const QUOTES_XX: QuoteTuple[] = [
   ['d314', 'Jeśli widzisz oszustwo i nie mówisz „oszustwo", sam jesteś oszustem.', 'If you see fraud and do not say fraud, you are a fraud', 'en', 'taleb', ['prawda', 'odwaga'], '„Skóra w grze", 2018'],
   ['d315', 'Spróbuj opiewać okaleczony świat.', '', 'pl', 'zagajewski', ['nadzieja', 'sztuka'], 'wiersz „Spróbuj opiewać okaleczony świat", 2001'],
   ['d316', 'Ziemia, nasz dom, zdaje się coraz bardziej przemieniać w ogromne składowisko śmieci.', '', 'it', 'papiez-franciszek', ['natura'], 'encyklika „Laudato si\'", 21, 2015'],
+  // ——— Rozszerzenie: poezja XX wieku, śmierć, nadzieja ———
+  ['d317', 'Dzień taki szczęśliwy. Mgła opadła wcześnie, pracowałem w ogrodzie.', '', 'pl', 'milosz', ['szczescie', 'natura'], '„Dar", 1971'],
+  ['d318', 'Klatka wyruszyła na poszukiwanie ptaka.', 'Ein Käfig ging einen Vogel suchen', 'de', 'kafka', ['wolnosc'], 'aforyzmy z Zürau, 16'],
+  ['d319', 'Dopóki lwy nie będą miały własnych historyków, opowieść o polowaniu zawsze będzie sławić myśliwego.', 'Until the lions have their own historians, the history of the hunt will always glorify the hunter', 'en', 'achebe', ['prawda', 'wladza'], 'wywiad dla „The Paris Review", 1994 — za przysłowiem Igbo'],
+  ['d320', 'Wszystko się rozpada; środek nie wytrzyma.', 'Things fall apart; the centre cannot hold', 'en', 'yeats', ['zmiana', 'wladza'], '„Drugie przyjście", 1919'],
+  ['d321', 'Stąpaj lekko, bo stąpasz po moich marzeniach.', 'Tread softly because you tread on my dreams', 'en', 'yeats', ['milosc'], '„Aedh pragnie szat niebieskich", 1899'],
+  ['d322', 'Tak właśnie kończy się świat — nie hukiem, lecz skomleniem.', 'This is the way the world ends not with a bang but a whimper', 'en', 'eliot-ts', ['smierc', 'czas'], '„Wydrążeni ludzie", 1925'],
+  ['d323', 'Kwiecień jest najokrutniejszym miesiącem.', 'April is the cruellest month', 'en', 'eliot-ts', ['natura', 'cierpienie'], '„Ziemia jałowa", 1922'],
+  ['d324', 'Nie wchodź łagodnie do tej dobrej nocy… Walcz, walcz, gdy gaśnie światło.', 'Do not go gentle into that good night... Rage, rage against the dying of the light', 'en', 'dylan-thomas', ['smierc', 'odwaga'], 'wiersz do umierającego ojca, 1951'],
+  ['d325', 'Itaka dała ci piękną podróż. Bez niej nie wyruszyłbyś w drogę.', '', '', 'kawafis', ['nadzieja', 'zycie'], '„Itaka", 1911'],
+  ['d326', 'Życie byłoby tragiczne, gdyby nie było zabawne.', 'Life would be tragic if it weren\'t funny', 'en', 'hawking', ['humor', 'zycie'], 'wywiad dla „The New York Times", 2004'],
+  ['d327', 'Nie musisz być dobry. Nie musisz iść na kolanach sto mil przez pustynię, żałując za grzechy.', 'You do not have to be good. You do not have to walk on your knees for a hundred miles through the desert, repenting', 'en', 'mary-oliver', ['wolnosc', 'nadzieja'], '„Dzikie gęsi", 1986'],
+  ['d328', 'Ktoś, kogo kiedyś kochałam, dał mi pudełko pełne ciemności. Zrozumienie, że to też był dar, zajęło mi lata.', 'Someone I loved once gave me a box full of darkness. It took me years to understand that this, too, was a gift', 'en', 'mary-oliver', ['cierpienie', 'milosc'], '„Pożytki ze smutku", 2006'],
+  ['d329', 'Nawet jeśli umieram, dopóki nie umrę, wciąż żyję.', 'Even if I\'m dying, until I actually die, I am still living', 'en', 'kalanithi', ['smierc', 'zycie'], '„Jeszcze jeden oddech", 2016'],
 ]

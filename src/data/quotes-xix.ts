@@ -243,4 +243,11 @@ export const QUOTES_XIX: QuoteTuple[] = [
   ['c225', 'Nie ma wielkości tam, gdzie nie ma prostoty, dobroci i prawdy.', '', 'ru', 'tolstoj', ['prawda', 'wladza'], '„Wojna i pokój" — o Napoleonie'],
   ['c226', 'Jest rozkosz w bezdrożnych lasach, jest zachwyt na samotnym brzegu, jest towarzystwo tam, gdzie nikt się nie wdziera — nad głębokim morzem i w muzyce jego szumu.', 'There is a pleasure in the pathless woods, there is a rapture on the lonely shore, there is society where none intrudes, by the deep Sea, and music in its roar', 'en', 'byron', ['natura', 'samotnosc'], '„Wędrówki Childe Harolda" IV, 178'],
   ['c227', 'Polska Winkelriedem narodów!', '', 'pl', 'slowacki', ['odwaga', 'wojna'], '„Kordian", akt III — monolog na Mont Blanc, 1834'],
+  // ——— Rozszerzenie: Tennyson, Stevenson, Leopardi ———
+  ['c228', 'Na wojnie wszystko jest bardzo proste, ale najprostsza rzecz jest trudna.', 'Im Kriege ist alles sehr einfach, aber das Einfachste ist schwierig', 'de', 'clausewitz', ['wojna'], '„O wojnie" I, 7'],
+  ['c229', 'Dziecko jest ojcem człowieka.', 'The Child is father of the Man', 'en', 'wordsworth', ['zycie', 'czas'], '„My Heart Leaps Up", 1802'],
+  ['c230', 'Lepiej kochać i stracić, niż nigdy nie kochać.', '\'Tis better to have loved and lost than never to have loved at all', 'en', 'tennyson', ['milosc', 'cierpienie'], '„In Memoriam A.H.H." 27, 1850'],
+  ['c231', 'Dążyć, szukać, znajdować i nie ustępować.', 'To strive, to seek, to find, and not to yield', 'en', 'tennyson', ['odwaga', 'sukces'], '„Ulisses", 1842'],
+  ['c232', 'Podróżować z nadzieją to rzecz lepsza niż dotrzeć do celu.', 'To travel hopefully is a better thing than to arrive', 'en', 'stevenson', ['nadzieja', 'sukces'], 'esej „El Dorado", 1881'],
+  ['c233', 'I słodko mi jest rozbić się w tym morzu.', 'E il naufragar m\'è dolce in questo mare', 'it', 'leopardi', ['samotnosc', 'natura'], '„Nieskończoność", 1819'],
 ]
