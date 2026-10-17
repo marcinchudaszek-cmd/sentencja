@@ -30,7 +30,8 @@ test.describe('losowanie', () => {
     await page.goto('/#/losuj')
     const stopka = page.locator('main p').filter({ hasText: 'Losowanie z' })
     // Bez liczby na sztywno — baza rośnie z każdą partią cytatów.
-    await expect(stopka).toContainText(/Losowanie z \d+ cytatów/)
+    // „cytat” bez końcówki: liczebnik zmienia odmianę (902 cytaty, 905 cytatów).
+    await expect(stopka).toContainText(/Losowanie z \d+ cytat/)
     const pelnaPula = (await stopka.textContent())!.trim()
 
     await page.getByRole('button', { name: 'Filtry', exact: true }).click()
