@@ -9,6 +9,7 @@ import { Icon } from '@/components/Icon'
 import { Chip, Section, StatPill, Toast } from '@/components/ui'
 import { QuoteCard, initials, quoteAsText } from '@/components/QuoteCard'
 import { useToast } from '@/hooks/useToast'
+import { plural } from '@/lib/text'
 
 export default function Home() {
   const navigate = useNavigate()
@@ -133,10 +134,11 @@ export default function Home() {
 
       {/* ——— statystyki ——— */}
       <div className="mt-5 grid grid-cols-2 gap-3 px-5 md:grid-cols-4 md:px-8">
-        <StatPill value={STATS.quotes} label="cytatów" />
-        <StatPill value={STATS.authors} label="autorów" />
-        <StatPill value={STATS.themes} label="tematów" />
-        <StatPill value={STATS.eras} label="epok" />
+        {/* Odmiana liczona, bo liczby rosną z każdą partią (902 cytaty, 905 cytatów). */}
+        <StatPill value={STATS.quotes} label={plural(STATS.quotes, 'cytat', 'cytaty', 'cytatów')} />
+        <StatPill value={STATS.authors} label={plural(STATS.authors, 'autor', 'autorów', 'autorów')} />
+        <StatPill value={STATS.themes} label={plural(STATS.themes, 'temat', 'tematy', 'tematów')} />
+        <StatPill value={STATS.eras} label={plural(STATS.eras, 'epoka', 'epoki', 'epok')} />
       </div>
 
       {/* ——— losowy strzał ——— */}
