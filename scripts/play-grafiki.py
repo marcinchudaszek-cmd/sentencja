@@ -99,7 +99,7 @@ def grafika_promocyjna():
     drobne = ImageFont.truetype(str(FONTS / 'segoeui.ttf'), 27)
     d.text((x - 4, 206), 'Sentencja', font=tytul, fill=(255, 255, 255))
     d.text((x, 322), 'Słynne cytaty, ich autorzy i epoki', font=podtytul, fill=(233, 225, 255))
-    d.text((x, 384), '865 cytatów  ·  318 autorów  ·  26 tematów  ·  offline',
+    d.text((x, 384), '902 cytaty  ·  333 autorów  ·  26 tematów  ·  offline',
            font=drobne, fill=(196, 181, 253))
     out.save(OUT / 'grafika-promocyjna-1024x500.png')
 

@@ -227,4 +227,12 @@ export const QUOTES_XIX: QuoteTuple[] = [
   ['c211', 'Prawdziwe raje to raje, które utraciliśmy.', 'Les vrais paradis sont les paradis qu\'on a perdus', 'fr', 'proust', ['czas', 'szczescie'], '„Czas odnaleziony", 1927'],
   ['c212', 'Jeśli płaczesz, bo zaszło słońce, łzy nie pozwolą ci zobaczyć gwiazd.', 'If you shed tears when you miss the sun, you also miss the stars', 'en', 'tagore', ['nadzieja', 'cierpienie'], '„Zabłąkane ptaki", 1916'],
   ['c213', 'Być zwyciężonym i nie ulec — to zwycięstwo; zwyciężyć i spocząć na laurach — to klęska.', '', 'pl', 'pilsudski', ['odwaga', 'sukces'], 'przypisywane; powszechnie cytowane bez wskazania źródła', 1],
+  // ——— Rozszerzenie: samotność, natura, wojna ———
+  ['c214', 'Kto nie kocha samotności, nie kocha też wolności — bo tylko będąc samemu, jest się wolnym.', 'Wer also die Einsamkeit nicht liebt, der liebt auch nicht die Freiheit: denn nur wenn man allein ist, ist man frei', 'de', 'schopenhauer', ['samotnosc', 'wolnosc'], '„Aforyzmy o mądrości życia", 1851'],
+  ['c215', 'Zapytaj siebie, czy jesteś szczęśliwy — a przestaniesz nim być.', 'Ask yourself whether you are happy, and you cease to be so', 'en', 'mill', ['szczescie'], '„Autobiografia", 1873'],
+  ['c216', 'Wojna jest jedynie dalszym ciągiem polityki innymi środkami.', 'Der Krieg ist eine bloße Fortsetzung der Politik mit anderen Mitteln', 'de', 'clausewitz', ['wojna', 'wladza'], '„O wojnie" I, 1, 1832'],
+  ['c217', 'Wyjdź na światło rzeczy — niech natura będzie twoim nauczycielem.', 'Come forth into the light of things, let Nature be your teacher', 'en', 'wordsworth', ['natura', 'wiedza'], '„The Tables Turned", 1798'],
+  ['c218', 'Na każdym spacerze z naturą otrzymuje się o wiele więcej, niż się szuka.', 'In every walk with nature one receives far more than he seeks', 'en', 'muir', ['natura'], '„Steep Trails", 1918'],
+  ['c219', 'Wzniosłem sobie pomnik nie ręką uczyniony.', 'Я памятник себе воздвиг нерукотворный', 'ru', 'puszkin', ['sztuka', 'smierc'], 'wiersz „Pomnik", 1836'],
+  ['c220', 'Gdy w nocy myślę o Niemczech, sen mnie opuszcza.', 'Denk ich an Deutschland in der Nacht, dann bin ich um den Schlaf gebracht', 'de', 'heine', ['samotnosc', 'cierpienie'], '„Myśli nocne", 1844'],
 ]

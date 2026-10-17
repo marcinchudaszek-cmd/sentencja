@@ -34,8 +34,27 @@ export default function SettingsScreen() {
     }
   }
 
-  const exportData = () => {
+  const exportData = async () => {
     const data = JSON.stringify({ favorites, collections, notes, settings }, null, 2)
+    if (isNative) {
+      // WebView Capacitora nie pobiera plików z adresów blob: — link z atrybutem
+      // download nic by nie zapisał. Zapis do pamięci podręcznej i systemowe
+      // „Udostępnij" pozwalają wysłać kopię na Dysk, do maila albo do Plików.
+      try {
+        const { Filesystem, Directory, Encoding } = await import('@capacitor/filesystem')
+        const written = await Filesystem.writeFile({
+          path: 'sentencja-kopia.json',
+          data,
+          directory: Directory.Cache,
+          encoding: Encoding.UTF8,
+        })
+        const { Share } = await import('@capacitor/share')
+        await Share.share({ title: 'Kopia danych Sentencji', files: [written.uri] })
+      } catch {
+        // Zamknięcie okna udostępniania też kończy się wyjątkiem — to nie błąd zapisu.
+      }
+      return
+    }
     const blob = new Blob([data], { type: 'application/json' })
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
@@ -138,8 +157,10 @@ export default function SettingsScreen() {
           onClick={exportData}
           className="press focus-ring glass flex w-full items-center gap-3 rounded-2xl p-4 text-left"
         >
-          <Icon name="download" size={17} className="text-accent" />
-          <span className="flex-1 text-[13.5px]">Zapisz kopię danych (JSON)</span>
+          <Icon name={isNative ? 'share' : 'download'} size={17} className="text-accent" />
+          <span className="flex-1 text-[13.5px]">
+            {isNative ? 'Wyślij kopię danych (JSON)' : 'Zapisz kopię danych (JSON)'}
+          </span>
           <Icon name="chevron" size={15} className="text-faint" />
         </button>
       </Group>

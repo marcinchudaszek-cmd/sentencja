@@ -149,4 +149,9 @@ export const QUOTES_ANTYK: QuoteTuple[] = [
   ['a140', 'Ilu ludzi, tyle zdań.', 'Quot homines, tot sententiae', 'la', 'terencjusz', ['czlowiek', 'prawda'], '„Formion", 454'],
   ['a141', 'Póki będziesz szczęśliwy, będziesz liczył wielu przyjaciół; gdy nadejdą pochmurne czasy, zostaniesz sam.', 'Donec eris felix, multos numerabis amicos; tempora si fuerint nubila, solus eris', 'la', 'owidiusz', ['przyjazn', 'samotnosc'], '„Żale" I, 9'],
   ['a142', 'Najlepszy czas na posadzenie drzewa był dwadzieścia lat temu. Drugi najlepszy jest teraz.', '', '', 'konfucjanska-mysl', ['czas', 'zmiana'], '„przysłowie chińskie" znane dopiero z XX-wiecznych źródeł zachodnich; chińskiego pierwowzoru nie odnaleziono', 1],
+  // ——— Rozszerzenie: przyjaźń i wojna ———
+  ['a143', 'Nie wiem, czy — poza mądrością — bogowie nieśmiertelni dali człowiekowi coś lepszego niż przyjaźń.', 'Haud scio an excepta sapientia nihil melius homini sit a dis immortalibus datum', 'la', 'cyceron', ['przyjazn', 'madrosc'], '„O przyjaźni" 20'],
+  ['a144', 'Spośród wszystkiego, co mądrość przygotowuje dla szczęścia całego życia, największym dobrem jest przyjaźń.', '', 'grc', 'epikur', ['przyjazn', 'szczescie'], '„Główne myśli" 27'],
+  ['a145', 'Tworzą pustynię i nazywają to pokojem.', 'Ubi solitudinem faciunt, pacem appellant', 'la', 'tacyt', ['wojna', 'wladza'], '„Agrykola" 30 — mowa wodza Kalgakusa o Rzymianach'],
+  ['a146', 'Kto pragnie pokoju, niech przygotowuje się do wojny.', 'Igitur qui desiderat pacem, praeparet bellum', 'la', 'wegecjusz', ['wojna'], '„Zarys sztuki wojennej" III, wstęp — stąd późniejsze „Si vis pacem, para bellum"'],
 ]
